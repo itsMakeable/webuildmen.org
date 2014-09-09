@@ -1,0 +1,1146 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"bgs",
+				"bgsz	background-size"
+			],
+			[
+				"rep",
+				"repeat"
+			],
+			[
+				"bg",
+				"bg	background: #${1:000};"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"bsh",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"top",
+				"top-bar"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"read",
+				"read-more"
+			],
+			[
+				"pr",
+				"primary-color"
+			],
+			[
+				"light",
+				"lighten"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"gr",
+				"gray-light"
+			],
+			[
+				"gray-light",
+				"gray-light2"
+			],
+			[
+				"bro",
+				"browsehappy"
+			],
+			[
+				"inter",
+				"Internet"
+			],
+			[
+				"Trad",
+				"Trademarks"
+			],
+			[
+				"text-",
+				"text-center"
+			],
+			[
+				"text",
+				"text-red"
+			],
+			[
+				"lar",
+				"large-9"
+			],
+			[
+				"large",
+				"large-9"
+			],
+			[
+				"larg",
+				"large-9"
+			],
+			[
+				"fw",
+				"fw:b	font-weight:bold"
+			],
+			[
+				"fiel",
+				"field--wrapper"
+			],
+			[
+				"refe",
+				"referral"
+			],
+			[
+				"oppo",
+				"opposition"
+			],
+			[
+				"leg",
+				"legend"
+			],
+			[
+				"persona",
+				"personal-yes"
+			],
+			[
+				"person",
+				"personal-no"
+			],
+			[
+				"perso",
+				"personal-yes"
+			],
+			[
+				"pos",
+				"pos:r	position:relative"
+			],
+			[
+				"blog",
+				"blog-posts"
+			],
+			[
+				"medium-",
+				"medium-centered"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"block",
+				"block"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"li",
+				"Licensing"
+			],
+			[
+				"head",
+				"header-font-family"
+			],
+			[
+				"fied",
+				"field--wrapper"
+			],
+			[
+				"fie",
+				"field--wrapper"
+			],
+			[
+				"tt",
+				"tt:u	text-transform:uppercase"
+			],
+			[
+				"gra",
+				"gray-medium2"
+			],
+			[
+				"background-a",
+				"background-arrow-blue-left"
+			],
+			[
+				"Agree",
+				"agreements"
+			],
+			[
+				"inclu",
+				"includes"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"includ",
+				"includes"
+			],
+			[
+				"box",
+				"box-shadow-4"
+			],
+			[
+				"medium-text-",
+				"medium-text-center"
+			],
+			[
+				"mediu",
+				"medium-offset-6"
+			],
+			[
+				"la",
+				"large-up"
+			],
+			[
+				"med",
+				"medium-6"
+			],
+			[
+				"bdr",
+				"bdrz	border-radius"
+			],
+			[
+				"data",
+				"data-equalizer"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"background-po",
+				"background-position-y"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"home-backgrou",
+				"home-background-attorneys"
+			],
+			[
+				"home",
+				"home-background-intro"
+			],
+			[
+				"me",
+				"medium-6"
+			],
+			[
+				"arro",
+				"arrow-link"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"medium",
+				"medium-12"
+			],
+			[
+				"blog-artic",
+				"blog-article-next"
+			],
+			[
+				"gray-li",
+				"gray-light"
+			],
+			[
+				"dat",
+				"data-equalizer-watch"
+			],
+			[
+				"arr",
+				"arrow-link"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"bgp",
+				"bgpx	background-position-x"
+			],
+			[
+				"bgr",
+				"bgr:n	background-repeat:no-repeat"
+			],
+			[
+				"smal",
+				"small-12"
+			],
+			[
+				"medium-pu",
+				"medium-push-1"
+			],
+			[
+				"hide",
+				"hide-for-large-up"
+			],
+			[
+				"medium-p",
+				"medium-push-6"
+			],
+			[
+				"small",
+				"small-6"
+			],
+			[
+				"bt",
+				"bdt	border-top"
+			],
+			[
+				"K",
+				"Kronenberger"
+			],
+			[
+				"hea",
+				"headshot-karl-small"
+			],
+			[
+				"da",
+				"data-equalizer-watch"
+			],
+			[
+				"exp",
+				"expand"
+			],
+			[
+				"tex",
+				"text-white"
+			],
+			[
+				"large-of",
+				"large-offset-1"
+			],
+			[
+				"prac",
+				"practice-areas"
+			],
+			[
+				"pra",
+				"practice-areas"
+			],
+			[
+				"header",
+				"header-website-agreements"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"bgz",
+				"bgz:cv	background-size:cover"
+			],
+			[
+				"se",
+				"secondary-color"
+			],
+			[
+				"Info",
+				"information"
+			],
+			[
+				"pus",
+				"push-1"
+			],
+			[
+				"aler",
+				"alert-color"
+			],
+			[
+				"all",
+				"all-caps"
+			],
+			[
+				"Hel",
+				"Helvetica"
+			],
+			[
+				"Helv",
+				"Helvetica-Neue"
+			],
+			[
+				"Mon",
+				"Montserrat"
+			],
+			[
+				"te",
+				"text-center"
+			],
+			[
+				"third",
+				"thirdStop"
+			],
+			[
+				"num",
+				"numero2"
+			],
+			[
+				"numer",
+				"numero1"
+			],
+			[
+				"large-",
+				"large-6"
+			],
+			[
+				"sm",
+				"small-10"
+			],
+			[
+				"s",
+				"small"
+			],
+			[
+				"c",
+				"columns"
+			],
+			[
+				"p",
+				"panel"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"typog",
+				"Hypertext Typographer: HTML Escape Potential Problems"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"tyop",
+				"Hypertext Typographer: Replace Potential Problems with Plain Alternatives"
+			],
+			[
+				"convert to",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				":200",
+				"LoremIpsum: (200) stick shake"
+			],
+			[
+				"conv",
+				"HTML2Jade: Convert selection"
+			],
+			[
+				"lor",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lore",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"spec",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"ty",
+				"Hypertext Typographer: Replace Potential Problems with Plain Alternatives"
+			],
+			[
+				"escp",
+				"Hypertext Typographer: HTML Escape Potential Problems"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"typo",
+				"Hypertext Typographer: HTML Escape Potential Problems"
+			],
+			[
+				"hy",
+				"Hypertext Typographer: Replace Potential Problems with Plain Alternatives"
+			],
+			[
+				"hyp",
+				"Hypertext Typographer: Show or Hide Potential Problems"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"emm",
+				"Emmet: Update Image Size"
+			],
+			[
+				"pref",
+				"Preferences: Settings - Default"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"jade",
+				"HTML2Jade: Convert selection"
+			],
+			[
+				"emme",
+				"Emmet: Update Image Size"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Toggle Trailing Spaces Highlighting"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"figl",
+				"Figlet: Add Text"
+			],
+			[
+				"fig",
+				"Figlet: Add Comment"
+			],
+			[
+				"fix",
+				"Figlet: Add Text"
+			],
+			[
+				"PCI",
+				"Package Control: Install Package"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"emmet up",
+				"Emmet: Update Image Size"
+			],
+			[
+				"tri",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"t",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"pcu",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upda",
+				"Emmet: Update Image Size"
+			],
+			[
+				"pc",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pci ",
+				"Package Control: Install Package"
+			],
+			[
+				"jad",
+				"HTML2Jade: Convert selection"
+			],
+			[
+				"htm",
+				"HTML2Jade: Convert selection"
+			],
+			[
+				"vie",
+				"View In Browser"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"con",
+				"HTML2Jade: Convert file"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"cont",
+				"Package Control: Add Repository"
+			],
+			[
+				"package de",
+				"Package Decontrol: Install From Github"
+			],
+			[
+				"pic",
+				"Package Control: Install Package"
+			],
+			[
+				"pc sass",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 673.0
+	},
+	"console":
+	{
+		"height": 289.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/styles.scss",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/js/jquery.scrollTo.min.js",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/index.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/js/zerif.js",
+		"/Users/Danny/Library/Caches/Cleanup At Startup/Transmit/B8D09797-DE56-45D0-BA82-1096C5A31CAF/MX_PVRN_Tide_Q413_300x100_CO4.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/js/min/zerif-min.js",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/js/jquery.vegas.min.js",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/styles.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/animate.min.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/bootstrap.min.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/jquery.vegas.min.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/owl.carousel.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/owl.theme.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/pixeden-icons.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/css/responsive.css",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit2/toolkit2.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit3/toolkit3.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit4/toolkit4.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit5/toolkit5.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit6/toolkit6.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit7/toolkit7.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit8/toolkit8.html",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/toolkit/toolkit1/toolkit1.html",
+		"/Users/Danny/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Danny/Desktop/Esquire Site/04-Develop/esquire/project.html",
+		"/Users/Danny/Desktop/_WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/_my-scss/_my-app.scss",
+		"/Users/Danny/Desktop/_WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/js/app.js",
+		"/Users/Danny/Desktop/_WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/_my-scss/_my-settings.scss",
+		"/Users/Danny/Desktop/untitled folder 2/leaflet.html",
+		"/Users/Danny/Sites/suntrustPrototype_v10_112912/1-lob_landing.shtml",
+		"/Users/Danny/Sites/__PORTFOLIO 2014/images/delta-ecard/ecardFinal/index.html",
+		"/Users/Danny/Library/Application Support/iRatchet/Invoice Templates/Crispy.htm",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/_my-scss/_my-app.scss",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/scss/_settings.scss",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/scss/app.scss",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/_my-scss/_my-settings.scss",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/js/app.js",
+		"/Users/Danny/Desktop/html5-boilerplate-4.3.0/index.html",
+		"/Users/Danny/Desktop/google/index.html",
+		"/Users/Danny/Desktop/svg-css3-menu-burger-button/index.html",
+		"/Volumes/KR Internet Law/templates/default_site/site.group/search-no-results.html",
+		"/Volumes/KR Internet Law/templates/default_site/site.group/search-results.html",
+		"/Users/Danny/Desktop/Molten-Leading-master-1/index.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-meta-affiliate-agreements.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/bower_components/formatter/.bower.json",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/firm-value-proposition.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/stylesheets/app.css",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/html/thanks.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/email-spam-class-action-defense-attorneys.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/alternative-payment-systems.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/config.rb",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/breach-notification.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/internet-law.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/ftc.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/hacking.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/impersonation-attorneys.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/internet-piracy.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/privacy-policies.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/UDRP.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/weight-loss-products.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/website-agreements.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/trade-secrets.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/tech-service-deals.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/tcpa-class-action-defense-attorneys.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/spam-law.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/sms-tcpa-spam-defense.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/right-of-publicity.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/piracy.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/payment-processing.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/online-sweepstakes-promotions-gaming.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/online-dating-websites.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/nutraceuticals.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/motion-to-quash.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/internet-trademark-infringment.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/internet-fraud.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/internet-defamation.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/international-IP-management.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/ftc-compliance.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/federal-trademark-registration.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/fcra.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/false-advertising.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/domain-theft.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/domain-legal-services.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/affiliate-agreements.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/auction-websites.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/click-fraud.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/content-distribution.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/cybersquatting.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/copyright-registration-internet.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/copyright-infringement.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/anonymous-defamation.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-header-nav.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/_archive/detail.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/class-action-defense-attorneys.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/html/affiliate-agreements.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/html/copyright-registration-internet.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/html/weight-loss-products.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-head.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/karl-kronenberger-profile.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/alison-kwan-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/virginia-sanderson-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/virginia-sanderson-profile.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/attorney-profile.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/james-weixel-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/index.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/free-online-case-submission.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/news.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/thanks.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-retargeting.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-closing-script.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/alison-kwan-profile.html",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-case-submission-cta.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-copyright.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-footer.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-google-analytics.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-meta.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/attorney-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-meta-free-online-case-submission.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-meta-piracy.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes/include-meta-internet-trademark-infringment.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/practice-area.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/news-article-detail.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/karl-kronenberger-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/jeff-rosenfeld-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/firm-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/contact.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/conor-kennedy-profile.jade",
+		"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/careers.jade"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"<open files>",
+			"open files",
+			"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production",
+			"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE",
+			"<open files>,<open folders>,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production",
+			"<open files>,<open folders>,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE/includes",
+			"<open files>,<open folders>",
+			"<open files>",
+			"<open files>,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production",
+			"<open files>",
+			"<open files>,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE",
+			"<open files>",
+			"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE",
+			"<open folders>,/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/__JADE",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"toolkits",
+			"knowhow",
+			"quot",
+			"color",
+			"rgb",
+			"rgba",
+			"128",
+			"h1",
+			".jpg",
+			"background",
+			"h4",
+			"4",
+			".5",
+			"about-us",
+			"about-s",
+			"header",
+			"home",
+			"#home",
+			"about-us",
+			"h3",
+			"btn-block",
+			"h3",
+			"h4",
+			"h5",
+			"h6",
+			"h4",
+			"about",
+			"header",
+			"h5",
+			"project",
+			"tool",
+			"h6",
+			"knowhow",
+			"h1",
+			"columns",
+			"custom-button",
+			"btn-block",
+			"btn",
+			"col-lg-3 col-md-3 columns text-center ",
+			"custom-button",
+			"btn-block",
+			"centered",
+			"footer",
+			"h6",
+			"h6 class=\"text-left\"",
+			"items-container",
+			"p",
+			"h6",
+			"images/team/avatarimage.png",
+			"images/team/pic1.jpg.gif",
+			"toolkit1",
+			"<!",
+			"images/projects/1.jpg.gif",
+			".jpg",
+			"project.html",
+			"images/toolkit",
+			"Project Title",
+			".jpg.gif",
+			"images/portfolio",
+			"50",
+			"0px",
+			"cover",
+			"btn",
+			"h6>",
+			"PATH_TO",
+			"images/flat_web_icon_set/",
+			"PATH_TO",
+			"2s",
+			"1.5s",
+			"custom",
+			".navbar-inverse .navbar-nav>li",
+			"h6",
+			"about-us",
+			"navbar-bra",
+			"/p",
+			"<p class=",
+			"p",
+			"visible",
+			"togg",
+			"nav",
+			"nav-b",
+			"toolki",
+			"toolks",
+			"about",
+			"knowhow",
+			"h4",
+			"images",
+			":hover",
+			":hover { ",
+			":hover",
+			":hover: #fff",
+			"btn",
+			"button",
+			":hover",
+			"h3",
+			"yellow",
+			"ececec",
+			"knowhow",
+			"opacit",
+			"text-white",
+			"know",
+			"know-",
+			".2",
+			"3px",
+			"width=\"70%\"",
+			"logo",
+			"h6",
+			"h5",
+			"h3",
+			"h6",
+			"<div class=\"service-icon super-size lobster\">",
+			"100%",
+			"h6",
+			"dark-bg",
+			"stroke",
+			"btn",
+			"button",
+			"hover",
+			"outset",
+			"Username",
+			"ol-lg-6 col-sm-6",
+			"col-lg-3 col-sm-3",
+			"<div class=\"service-icon\">",
+			"<div class=\"service-icon",
+			"h4",
+			"intro",
+			"container",
+			"g"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"toolkit4",
+			"toolkit/toolkit1/toolkit1.jpg",
+			".side-nav\n	h6.all-caps.side-nav-header.box-shadow-4.margin-0 Practice Areas\n	dl.accordion(data-accordion='data-accordion')\n		//- a(href=\"{path=practice-areas/internet-law\") Practice Areas Overview\n		dd\n			a.all-caps(href='#panel1')  Trademarks, Copyrights &amp; Trade Secrets\n			#panel1.content\n				ul.no-bullet\n					//- li: a(href=\"{path=practice-areas/#\") Trademarks, Copyrights &amp; Trade Secrets\n					li: a(href=\"{path=practice-areas/internet-trademark-infringment}\") Trademark Infringement\n					li: a(href=\"{path=practice-areas/federal-trademark-registration}\") Trademark Registrations\n					li: a(href=\"{path=practice-areas/copyright-infringement}\") Copyright Infringement\n					li: a(href=\"{path=practice-areas/copyright-registration-internet}\") Copyright Registrations\n					li: a(href=\"{path=practice-areas/international-IP-management}\") International IP Management\n					li: a(href=\"{path=practice-areas/internet-piracy}\") Counterfeit Goods\n					li: a(href=\"{path=practice-areas/right-of-publicity}\") Right of Publicity\n					li: a(href=\"{path=practice-areas/internet-piracy}\") Piracy\n					li: a(href=\"{path=practice-areas/trade-secrets}\") Trade Secrets\n\n		dd\n			a.all-caps(href=\"#panel2\") Spam Law\n			#panel2.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/spam-law}\") Email Spam Defense\n					li: a(href=\"{path=practice-areas/sms-tcpa-spam-defense}\") SMS / TCPA Spam Defense\n\n		dd\n			a.all-caps(href=\"#panel3\")  FTC / Advertising Law Compliance\n			#panel3.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/ftc}\") FTC / Attorney General Lawsuits\n					li: a(href=\"{path=practice-areas/ftc-compliance}\") FTC and Government Regulation Compliance\n					li: a(href=\"{path=practice-areas/online-sweepstakes-promotions-gaming}\") Online Sweepstakes &amp; Gaming\n					li: a(href=\"{path=practice-areas/nutraceuticals}\") Nutraceuticals\n					li: a(href=\"{path=practice-areas/weight-loss-products}\") Weight Loss Products\n					li: a(href=\"{path=practice-areas/auction-websites}\") Auction Websites\n					li: a(href=\"{path=practice-areas/fcra}\") Fair Credit Reporting Act (FCRA) Reviews\n					li: a(href=\"{path=practice-areas/online-dating-websites}\") Online Dating Websites\n\n		dd\n			a.all-caps(href=\"#panel4\") Class Action Defense\n			#panel4.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/tcpa-class-action-defense-attorneys}\") TCPA / SMS Class Action Defense\n					li: a(href=\"{path=practice-areas/email-spam-class-action-defense-attorneys}\") Email Spam Class Action Defense\n					li: a(href=\"{path=practice-areas/class-action-defense-attorneys}\") Consumer Class Action Defense\n\n		dd\n			a.all-caps(href=\"#panel5\") False Advertising &amp; Defamation\n			#panel5.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/false-advertising}\") False Advertising\n					li: a(href=\"{path=practice-areas/internet-defamation}\") Business Disparagement / Defamation\n					li: a(href=\"{path=practice-areas/motion-to-quash}\") Motion to Quash\n\n		dd\n			a.all-caps(href=\"#panel6\") Domain Names\n			#panel6.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/cybersquatting}\") Cybersquatting\n					li: a(href=\"{path=practice-areas/UDRP}\") UDRP Domain Name Arbitrations\n					li: a(href=\"{path=practice-areas/domain-theft}\") Domain Theft\n					li: a(href=\"{path=practice-areas/domain-legal-services}\") Domain Name Legal Services\n\n		dd\n			a.all-caps(href=\"#panel7\") Website Agreements\n			#panel7.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/website-agreements}\") Terms of Service\n					li: a(href=\"{path=practice-areas/privacy-policies}\") Privacy Policies\n					li: a(href=\"{path=practice-areas/tech-service-deals}\") Tech and SAAS Deals\n					li: a(href=\"{path=practice-areas/content-distribution}\") IP / Content Licensing\n					li: a(href=\"{path=practice-areas/affiliate-agreements}\") Affiliate Agreements\n\n		dd\n			a.all-caps(href=\"#panel8\") Payment Processing &amp; Electronic Payments\n			#panel8.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/payment-processing}\") Payment Processing\n					li: a(href=\"{path=practice-areas/alternative-payments-systems}\") Alternative Payments Systems\n\n		dd\n			a.all-caps(href=\"#panel9\") Anonymous Online Misconduct\n			#panel9.content\n				ul.no-bullet\n					li: a(href=\"{path=practice-areas/hacking}\") Hacking \n					li: a(href=\"{path=practice-areas/internet-fraud}\") Anonymous Fraud\n					li: a(href=\"{path=practice-areas/anonymous-defamation}\") Anonymous Defamation\n					li: a(href=\"{path=practice-areas/breach-notification}\") Security Breaches\n					li: a(href=\"{path=practice-areas/click-fraud}\") Click Fraud\n					li: a(href=\"{path=practice-areas/motion-to-quash}\") Motion to Quash\n					li: a(href=\"{path=practice-areas/internet-piracy}\") Piracy\n					li: a(href=\"{path=practice-areas/impersonation-attorneys}\") Impersonation \n",
+			"html.tr-coretext.tr-aa-subpixel.no-js(lang=\"en\")\nhead\n	",
+			"http://www.krinternetlaw.com/img/global/KR-logo.png",
+			"meta(itemprop='image', content='http://www.krinternetlaw.com/img/global/KR-logo.png')",
+			"\"",
+			"src=\"/img",
+			"a.button(href=\"vcf/Karl-S-Kronenberger.vcf\") V-card",
+			"#presentations-publications') Presentations &amp; Publications",
+			"#representative-matters",
+			"#blog-posts",
+			"#representative-matters",
+			"#biography",
+			"#panel3",
+			"#panel2",
+			"#panel1",
+			"",
+			".large-3.medium-3.columns.large-offset-1.large-pull-8.medium-pull-9\n	.show-for-small-only\n		br\n		br\n\n",
+			".large-7.medium-9.columns.large-push-4.medium-push-3",
+			".large-7.medium-9.columns.large-push-4.medium-push-3\n	h5.text-serif TBD\n\n.large-3.medium-3.columns.large-offset-1.large-pull-8.medium-pull-9\n	.show-for-small-only\n		br\n		br\n			\n	ul.side-nav\n		h6.all-caps.side-nav-header.box-shadow-4 Practice Areas\n		li: h6\n			a(href='#') Internet Law Overview\n		li: h6\n			a(href='#') Internet-Related Litigation\n		li: h6\n			a(href='#') Class Actions\n		li: h6 WEBSITE AGREEMENTS\n				a(href='#') Tech &amp; Services Deals\n				a(href='#') Content Licensing\n		li: h6\n			a(href='#') Domain Names\n		li: h6\n			a(href='#') Defamation &amp; Free Speech\n		li: h6\n			a(href='#') Trade Secrets\n		li: h6\n			a(href='#') Copyrights &amp; Trademarks\n		li: h6\n			a(href='#') FTC/Attorney General Defense\n		li: h6\n			a(href='#') Ad Law Compliance\n		li: h6\n			a(href='#') Email &amp; SMS Spam\n		li: h6\n			a(href='#') Payment Processing Disputes",
+			"#panel3.content\n							| Panel 3",
+			"#panel2.content\n							| Panel 2",
+			"#panel1.content\n							| Panel 1",
+			"#panel1.content",
+			"a.all-caps(href='#panel3') Representative Matter 3",
+			"a.all-caps(href='#panel2') Representative Matter 2",
+			"a.all-caps(href='#panel1') Representative Matter 1",
+			"CONTENT TBD",
+			"width=\"439\" height=\"151\"",
+			"<a href=\"http://www.pinterest.com/beazerhomes/\" target=\"_blank\" style=\"border:0\">\n								<img src=\"images/social-pinterest.gif\" alt=\"social-pinterest\" width=\"33\" height=\"33\" border=\"0\">\n							</a>\n							<a href=\"http://www.yelp.com/\" target=\"_blank\" style=\"border:0\">\n								<img src=\"images/social-yelp.gif\" alt=\"social-yelp\" width=\"33\" height=\"33\" border=\"0\">\n							</a>",
+			"<!-- Pillar section begins here -->",
+			"<!-- Pillar section ends here -->",
+			"",
+			" ",
+			"",
+			"img",
+			"1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 152.0
+	},
+	"output.sftp":
+	{
+		"height": 253.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jad",
+				"__PORTFOLIO 2014/photography.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Danny/Desktop/*WORK/Karl Kronenberger/04-Develop/krinternetlaw-production/KR Internet Law.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true
+}
