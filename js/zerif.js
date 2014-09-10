@@ -48,7 +48,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 $(document).ready(function() {
   $('.main-nav-list').onePageNav({
     scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
-    scrollOffset: 75 //Height of Navigation Bar
+    scrollOffset: 75, //Height of Navigation Bar
+    changeHash: true
   });
 
   
@@ -96,9 +97,10 @@ $(document).ready(function() {
   scrollAnimation = 'easeInOutExpo';
   $('a.scrollto').bind('click.smoothscroll',function (event) {
     event.preventDefault();
-    var target = $(this).attr("href");
+    var target = $(this).attr("href").substr(1);
     $.scrollTo($(target), 1000, {offset:-75} );
-    window.location.href = target;
+    hash = target.substr(1);
+    window.location.hash = hash;
   });  
 }); 
 
@@ -113,7 +115,7 @@ jQuery(document).ready(function($) {
     $('.more').on('click', function(event) {
         event.preventDefault();
 
-        var href = $(this).attr('href') + ' .single-project',
+        var href = $(this).attr('href'),
             portfolioList = $('#portfolio-list'),
             content = $('#loaded-content');
 
@@ -126,6 +128,7 @@ jQuery(document).ready(function($) {
                 $('#loader').hide();
                 content.fadeIn(600);
                 $('#back-button').fadeIn(600);
+                window.location.hash = href;
             });
         },800);
 
