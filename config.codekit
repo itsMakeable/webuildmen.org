@@ -1288,6 +1288,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/community\/images\/cjpgallery.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34627,
+		"inputAbbreviatedPath": "\/community\/images\/cjpgallery.jpeg",
+		"outputAbbreviatedPath": "\/community\/images\/cjpgallery.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/community\/images\/esquiremag.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52518,
+		"inputAbbreviatedPath": "\/community\/images\/esquiremag.png",
+		"outputAbbreviatedPath": "\/community\/images\/esquiremag.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/community\/images\/joelakamag.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26394,
+		"inputAbbreviatedPath": "\/community\/images\/joelakamag.jpeg",
+		"outputAbbreviatedPath": "\/community\/images\/joelakamag.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/community\/images\/oluburrell.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28223,
+		"inputAbbreviatedPath": "\/community\/images\/oluburrell.png",
+		"outputAbbreviatedPath": "\/community\/images\/oluburrell.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/animate.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1528,7 +1572,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7.36490e+06,
+		"initialSize": 7.3649e+06,
 		"inputAbbreviatedPath": "\/images\/_background image options\/4562203394_2e4bd2cf60_o.jpg",
 		"outputAbbreviatedPath": "\/images\/_background image options\/4562203394_2e4bd2cf60_o.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2173,16 +2217,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Community\/avatarimage.png": {
+	"\/images\/community\/avatarimage.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 189,
-		"inputAbbreviatedPath": "\/images\/Community\/avatarimage.png",
-		"outputAbbreviatedPath": "\/images\/Community\/avatarimage.png",
+		"inputAbbreviatedPath": "\/images\/community\/avatarimage.png",
+		"outputAbbreviatedPath": "\/images\/community\/avatarimage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/home\/badgelogo.png": {
 		"fileType": 32768,
@@ -2336,6 +2380,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/jquery.scrollTo.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/jquery.scrollTo.min-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/jquery.scrollTo.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/min\/zerif-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -2446,253 +2501,110 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/toolkit\/toolkit1\/toolkit1.html": {
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/toolkits\/chef-brian-lewis\/build-a-meal-like-a-chef.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit1\/toolkit1.html",
+		"inputAbbreviatedPath": "\/toolkits\/chef-brian-lewis\/build-a-meal-like-a-chef.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/toolkit\/toolkit1\/toolkit1.jpg": {
+	"\/toolkits\/chef-brian-lewis\/toolkit1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 253953,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit1\/toolkit1.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit1\/toolkit1.jpg",
+		"initialSize": 50165,
+		"inputAbbreviatedPath": "\/toolkits\/chef-brian-lewis\/toolkit1.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/chef-brian-lewis\/toolkit1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/toolkit\/toolkit1\/toolkit1_th.jpg": {
+	"\/toolkits\/chef-brian-lewis\/toolkit1_th.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 101029,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit1\/toolkit1_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit1\/toolkit1_th.jpg",
+		"initialSize": 24687,
+		"inputAbbreviatedPath": "\/toolkits\/chef-brian-lewis\/toolkit1_th.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/chef-brian-lewis\/toolkit1_th.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/toolkit\/toolkit2\/toolkit2.html": {
+	"\/toolkits\/esquire\/build-a-blog-like-a-pro.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit2\/toolkit2.html",
+		"inputAbbreviatedPath": "\/toolkits\/esquire\/build-a-blog-like-a-pro.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/toolkit\/toolkit2\/toolkit2.jpg": {
+	"\/toolkits\/esquire\/toolkit2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 314107,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit2\/toolkit2.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit2\/toolkit2.jpg",
+		"initialSize": 63749,
+		"inputAbbreviatedPath": "\/toolkits\/esquire\/toolkit2.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/esquire\/toolkit2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/toolkit\/toolkit2\/toolkit2_th.jpg": {
+	"\/toolkits\/esquire\/toolkit2_th.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 129095,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit2\/toolkit2_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit2\/toolkit2_th.jpg",
+		"initialSize": 38122,
+		"inputAbbreviatedPath": "\/toolkits\/esquire\/toolkit2_th.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/esquire\/toolkit2_th.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/toolkit\/toolkit3\/toolkit3.html": {
+	"\/toolkits\/popular-mechanics\/build-a-go-kart-like-a-champ.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit3\/toolkit3.html",
+		"inputAbbreviatedPath": "\/toolkits\/popular-mechanics\/build-a-go-kart-like-a-champ.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/toolkit\/toolkit3\/toolkit3.jpg": {
+	"\/toolkits\/popular-mechanics\/toolkit3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 188281,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit3\/toolkit3.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit3\/toolkit3.jpg",
+		"initialSize": 48413,
+		"inputAbbreviatedPath": "\/toolkits\/popular-mechanics\/toolkit3.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/popular-mechanics\/toolkit3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/toolkit\/toolkit3\/toolkit3_th.jpg": {
+	"\/toolkits\/popular-mechanics\/toolkit3_th.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 75185,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit3\/toolkit3_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit3\/toolkit3_th.jpg",
+		"initialSize": 21987,
+		"inputAbbreviatedPath": "\/toolkits\/popular-mechanics\/toolkit3_th.jpg",
+		"outputAbbreviatedPath": "\/toolkits\/popular-mechanics\/toolkit3_th.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit4\/toolkit4.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit4\/toolkit4.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/toolkit\/toolkit4\/toolkit4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 133905,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit4\/toolkit4.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit4\/toolkit4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit4\/toolkit4_th.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 54779,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit4\/toolkit4_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit4\/toolkit4_th.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit5\/toolkit5.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit5\/toolkit5.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/toolkit\/toolkit5\/toolkit5.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 216160,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit5\/toolkit5.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit5\/toolkit5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit5\/toolkit5_th.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 86437,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit5\/toolkit5_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit5\/toolkit5_th.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit6\/toolkit6.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit6\/toolkit6.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/toolkit\/toolkit6\/toolkit6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 249883,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit6\/toolkit6.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit6\/toolkit6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit6\/toolkit6_th.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 100667,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit6\/toolkit6_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit6\/toolkit6_th.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit7\/toolkit7.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit7\/toolkit7.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/toolkit\/toolkit7\/toolkit7.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 172801,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit7\/toolkit7.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit7\/toolkit7.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit7\/toolkit7_th.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 64646,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit7\/toolkit7_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit7\/toolkit7_th.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit8\/toolkit8.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit8\/toolkit8.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/toolkit\/toolkit8\/toolkit8.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 194362,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit8\/toolkit8.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit8\/toolkit8.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/toolkit\/toolkit8\/toolkit8_th.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 72896,
-		"inputAbbreviatedPath": "\/toolkit\/toolkit8\/toolkit8_th.jpg",
-		"outputAbbreviatedPath": "\/toolkit\/toolkit8\/toolkit8_th.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		}
 	},
 "hooks": [
