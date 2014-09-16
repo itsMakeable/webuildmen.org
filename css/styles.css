@@ -8013,7 +8013,6 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   transition-timing-function: ease-in;
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
-  cursor: wait;
   -webkit-transition: 0.4s all linear;
   transition: 0.4s all linear; }
 
