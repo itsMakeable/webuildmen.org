@@ -28,8 +28,9 @@ html {
     -webkit-font-smoothing: antialiased !important;
 }
 body {
-    font-family: 'Lato', sans-serif !important;
-    font-size: 14px;
+    // font-family: 'Lato', sans-serif !important;
+    font-family: 'Vollkorn', serif !important;
+    font-size: 20px;
     color: #808080;
     font-weight: normal;
     overflow-x: hidden;
@@ -145,13 +146,13 @@ h3 {
     font-size: 24px;
 }
 h4 {
-    font-size: 18px;
+    font-size: 22px;
 }
 h5 {
-    font-size: 17px;
+    font-size: 20px;
 }
 h6 {
-    font-size: 16px;
+    font-size: 18px;
 }
 .super-size {
     font-size: 90px;
@@ -172,6 +173,9 @@ h6 {
 .logo {
     -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 1));
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 1));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .text-white {
     color: white;
@@ -488,6 +492,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     border: 0;
     border-radius: 0 !important;
     text-align: left;
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
     -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
     box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 }
@@ -512,7 +518,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .navbar-inverse .navbar-nav>li>a {
     color: #ccc;
     padding: 0;
-    line-height: 35px;
+    line-height: 32px;
 }
 .navbar-brand {
     height: 76px;
@@ -704,6 +710,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     list-style: none;
     position: relative;
     width: 100%;
+    font-family: "montserrat", sans-serif;
 }
 .cbp-rfgrid li {
     position: relative;
@@ -763,6 +770,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     // -webkit-transition: all ease .25s;
     // transition: all ease .25s;
     width: 100%;
+    font-size: 14px;
+    font-weight: 400;
 }
 .cbp-rfgrid li a .project-info h5 {
     position: relative;
@@ -770,6 +779,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 0 15px;
 }
 .cbp-rfgrid li a:hover .project-info {
     filter: alpha(opacity=100);
