@@ -2,7 +2,13 @@
 	"folders":
 	[
 		{
-			"path": "."
+				"path": ".",
+				"folder_exclude_patterns": ["node_modules"]
+		},
+		{
+				"path": ".",
+				"name": "Documentation",
+				"file_exclude_patterns": ["*.jpg","*.png","*.gif"]
 		}
 	]
 }

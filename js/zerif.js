@@ -92,17 +92,17 @@ $(document).ready(function() {
 ===  SMOOTH SCROLL             ====
 =================================== */
 
-$(document).ready(function() {
-  var scrollAnimationTime = 1200,
-  scrollAnimation = 'easeInOutExpo';
-  $('a.scrollto').bind('click.smoothscroll',function (event) {
-    event.preventDefault();
-    var target = $(this).attr("href").substr(1);
-    $.scrollTo($(target), 1000, {offset:-75} );
-    hash = target.substr(1);
-    window.location.hash = hash;
-  });  
-}); 
+// $(document).ready(function() {
+//   var scrollAnimationTime = 1200,
+//   scrollAnimation = 'easeInOutExpo';
+//   $('a.scrollto').bind('click.smoothscroll',function (event) {
+//     event.preventDefault();
+//     var target = $(this).attr("href").substr(1);
+//     $.scrollTo($(target), 1000, {offset:-75} );
+//     hash = target.substr(1);
+//     window.location.hash = hash;
+//   });  
+// }); 
 
 
 
