@@ -1,9 +1,12 @@
 var msViewportStyle;
 
 $(window).load(function() {
-  $('.js-set-height, .tools').css({
+  $('.js-set-height').css({
     'min-height': $(window).height(),
     'max-height': $(window).height()
+  });
+  $('.js-set-min-height').css({
+    'min-height': $(window).height()
   });
   $(".status").fadeOut();
   $(".preloader").delay(1000).fadeOut("slow");
@@ -23,15 +26,6 @@ $(document).ready(function() {
     changeHash: true
   });
   top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
-  $(window).scroll(function(event) {
-    var y;
-    y = $(this).scrollTop();
-    if (y >= top) {
-      $("#main-nav").addClass("fixed");
-    } else {
-      $("#main-nav").removeClass("fixed");
-    }
-  });
 });
 
 $(document).ready(function() {
@@ -117,8 +111,20 @@ $(document).ready(function() {
   });
 });
 
+new WOW().init();
+
 $(function() {
   $(".equal-height").equalize({
     children: "h6"
+  });
+  return $('.project-box figure').on('mouseover', function() {
+    console.log($(this));
+    return $(this).css({
+      'background': $(this).data('background')
+    });
+  }).on('mouseleave', function() {
+    return $(this).css({
+      'background': ''
+    });
   });
 });

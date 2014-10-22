@@ -43,6 +43,8 @@ head
 
 		block head
 	body
+		include symbols
+		include nav
 		script.
 			window.fbAsyncInit = function() {
 			FB.init({
@@ -70,10 +72,13 @@ head
 				.block
 					.col-lg-4
 						a(href='http://www.itsmakeable.com', target='_blank')
-							img.footer-logo(src='/images/logo-makeable.svg', alt='')
-						img.footer-logo-divider(src='/images/divider.svg', alt='')
+							svg.footer-logo.is-left
+								use(xlink:href='#footer-makeable')
+						svg.footer-logo-divider(viewbox='0 0 61.4 165')
+							use(xlink:href='#divider') 
 						a(href='http://www.esquire.com', target='_blank')
-							img.footer-logo(src='/images/logo-esquire.svg', alt='')
+							svg.footer-logo.is-right
+								use(xlink:href='#footer-esquire') 
 						//- .col-lg-4
 						//- br
 						//- br
@@ -86,7 +91,7 @@ head
 		//- SCRIPTS 
 		script(src='/js/bootstrap.min.js')
 		script(src='/js/jquery.scrollTo.min.js')
-		//- <script src="js/wow.min.js"></script> 
+		script(src='/js/wow.min.js')
 		script(src='/js/jquery.nav.js')
 		//- <script src="js/jquery.knob.js"></script> 
 		script(src='/js/owl.carousel.min.js')

@@ -3971,7 +3971,7 @@ select[multiple].input-lg, textarea.input-lg {
 .btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #e96656;
-  border-color: #de321d; }
+  border-color: #e96656; }
 
 .btn-primary.active, .btn-primary:active, .open .dropdown-toggle.btn-primary {
   background-image: none; }
@@ -7438,9 +7438,13 @@ button.close {
     display: block; }
  }
 
-/* =======================================================================
-Zerif -One Page Respossive HTML5 Template
-======================================================================= */
+.vertical-align, .project-info .project-details {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 /* --------------------------------------
 =========================================
 GLOBAL STYLES
@@ -7504,24 +7508,26 @@ li {
 
 /* Selection colours (easy to forget) */
 ::-moz-selection {
-  background: #FC6D6D;
+  background: #e96656;
   color: #FFF; }
 
 ::selection {
-  background: #FC6D6D;
+  background: #e96656;
   color: #FFF; }
 
 ::-moz-selection {
-  background: #FC6D6D;
+  background: #e96656;
   color: #FFF; }
 
 a {
   color: #e96656;
-  -webkit-transition: all 700ms;
-  transition: all 700ms; }
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 a, a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 a:hover {
   color: #cb4332; }
@@ -7600,6 +7606,9 @@ h6 {
 .homemade-apple {
   font-family: 'Homemade Apple'; }
 
+.italic {
+  font-style: italic; }
+
 .logo {
   -webkit-filter: drop-shadow(0px 5px 5px #000000);
   filter: drop-shadow(0px 5px 5px #000000);
@@ -7632,6 +7641,15 @@ h6 {
 /*---------------------------------------
  **   BUTTONS                        -----
 -----------------------------------------*/
+.button-group .btn + p {
+  transform: translateY(1px);
+  opacity: 0.5;
+  transition: all 0.2s ease-out; }
+.button-group .btn:hover + p {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.2s ease-out; }
+
 .buttons {
   text-align: center;
   margin-bottom: 100px;
@@ -7678,8 +7696,8 @@ h6 {
 
 .red-btn, .green-btn, .blue-btn, .yellow-btn {
   color: #FFF;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
 
 .blue-btn:hover {
   color: #FFF;
@@ -7930,7 +7948,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 #main-nav.fixed {
   position: fixed !important;
-  top: 0; }
+  top: 0;
+  z-index: 9999999; }
 
 .navbar-inverse .navbar-nav > li {
   display: inline;
@@ -8037,9 +8056,18 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   padding-bottom: 100px;
   overflow: hidden; }
 
+.star--small {
+  width: 20px;
+  position: relative;
+  top: -6px; }
+
+.star--large {
+  width: 30px;
+  margin: 0 3px; }
+
 /* FOCUS BOX */
 .knowhow-box {
-  margin-bottom: 25px; }
+  margin-top: 50px; }
 
 .knowhow-box .service-icon {
   margin-bottom: 30px;
@@ -8109,6 +8137,10 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 /*---------------------------------------
  **   SECTION:  PORTFOLIO          -----
 -----------------------------------------*/
+.screwdriver {
+  width: 120px;
+  margin: 0px 0 30px 0; }
+
 .works {
   padding-bottom: 100px;
   background: #3d69bb;
@@ -8135,72 +8167,97 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   -webkit-transition: 0.4s all linear;
   transition: 0.4s all linear; }
 
-.cbp-rfgrid li a, .cbp-rfgrid li a img {
-  display: block;
-  max-width: 100%;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  cursor: pointer;
-  -webkit-transition: 0.4s all linear;
-  transition: 0.4s all linear; }
-
-.cbp-rfgrid li a:hover img {
-  -webkit-transform: scale(1.05, 1.07);
-  -ms-transform: scale(1.05, 1.07);
-  transform: scale(1.05, 1.07);
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms; }
-
 /* Flexbox is used for centering the heading */
 .project-box {
-  height: 250px;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
+  .project-box figure {
+    height: 250px;
+    background-size: cover !important;
+    background-position: center center !important; }
 
 .cbp-rfgrid li a .project-info {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  background: rgba(0, 0, 0, 0.85);
-  padding-top: 25%;
+  height: 250px;
+  background: linear-gradient(to bottom, rgba(40, 37, 37, 0.3) 50%, rgba(40, 37, 37, 0.3) 100%);
   text-align: center;
   filter: alpha(opacity=100);
   opacity: 1;
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s; }
+  -webkit-transition: all ease 0.35s;
+  transition: all ease 0.35s;
+  position: relative; }
+  .cbp-rfgrid li a .project-info:before {
+    content: '';
+    border: 5px solid white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .cbp-rfgrid li a .project-info:after {
+    content: '';
+    background: linear-gradient(to bottom, rgba(40, 37, 37, 0) 60%, rgba(40, 37, 37, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 0.35s linear;
+    transition: transform 0.35s linear;
+    transform: translateY(40%);
+    z-index: 0; }
 
-.cbp-rfgrid li a .project-info .project-details {
+.project-info .project-details {
   position: relative;
   filter: alpha(opacity=100);
   opacity: 1;
   width: 100%;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: all 0.35s linear;
+  display: block;
+  z-index: 10; }
+  .project-info .project-details .details {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700; }
 
 .cbp-rfgrid li a .project-info h5 {
   position: relative;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 15px; }
 
 .cbp-rfgrid li a:hover .project-info {
-  filter: alpha(opacity=100);
-  opacity: 1; }
-
+  background: linear-gradient(to bottom, rgba(40, 37, 37, 0) 50%, rgba(40, 37, 37, 0.3) 100%);
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s; }
+  .cbp-rfgrid li a:hover .project-info:after {
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s ease-out;
+    transition: transform 0.35s ease-out;
+    transform: translateY(0%); }
 .cbp-rfgrid li a:hover .project-details {
-  filter: alpha(opacity=100);
+  transform: translateY(0%);
+  transition: all 0.3s linear; }
+  .cbp-rfgrid li a:hover .project-details .project-details__logo {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s ease, height 0s linear 0.15s, margin-top 0s linear 0.15s;
+    transition: opacity 0.15s ease, height 0s linear 0.15s, margin-top 0s linear 0.15s;
+    height: 40px !important;
+    margin-top: 0px !important; }
+
+.project-details__logo {
   opacity: 1;
-  top: 0; }
+  -webkit-transition: opacity 0.7s ease 0s;
+  transition: opacity 0.7s ease 0s; }
 
 .cbp-rfgrid li a:hover .button {
   filter: alpha(opacity=100);
@@ -8290,32 +8347,48 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   line-height: normal;
   margin-top: -10px; }
 
-.about-us p {
+.about-us p:not(.text-center) {
   text-align: left; }
 
 .about-us .tools__title {
   background-color: black;
   padding: 20px 30px 15px 30px; }
-  .about-us .tools__title .big-intro {
+  .about-us .tools__title.big-intro {
     font-size: 44px;
     text-align: left;
     text-transform: uppercase; }
 
+@keyframes expandRight {
+  0% {
+    transform: translateX(100%); }
+
+  100% {
+    transform: translateX(0%); } }
+
 .tools {
   background-color: white;
-  padding: 80px 20% 40px 64px;
+  padding: 80px 10% 40px 64px;
   text-align: left;
   overflow-y: scroll; }
-  .tools h1, .tools h2, .tools h3, .tools h4, .tools h5, .tools h6, .tools p {
-    color: black; }
+  .tools h1, .tools h2, .tools h3, .tools h4, .tools h5, .tools h6, .tools p, .tools li {
+    color: #282525; }
+  .tools h3 {
+    text-transform: uppercase; }
+  .tools h5 {
+    font-family: 'montserrat', sans-serif; }
   .tools ul li {
     list-style: disc; }
   .tools ol li {
     list-style: decimal; }
   .tools li {
     margin-left: 40px; }
+  @media screen and (min-width: 1200px) {
+    .tools {
+      padding: 80px 20% 40px 64px; } }
   @media screen and (min-width: 992px) {
     .tools {
+      animation: expandRight 1s linear 1s forwards;
+      transform: translateX(100%);
       width: 49%;
       position: fixed;
       top: 70px;
@@ -9023,7 +9096,7 @@ footer {
   /* Adjusts for spacing */ }
 
 /* The element to be centered, can
-   also be of any width and height */
+	 also be of any width and height */
 .centered {
   display: inline-block;
   vertical-align: middle; }
@@ -9038,21 +9111,27 @@ footer {
   transform: translate(-50%, -50%); }
 
 .footer-logo {
-  width: 40%;
-  max-height: 80px; }
+  height: 50px;
+  max-width: 46%;
+  display: inline-block; }
   .footer-logo.is-left {
-    float: left; }
+    float: left;
+    width: 137px; }
   .footer-logo.is-right {
-    float: right; }
+    float: right;
+    width: 161px; }
 
 .footer-logo-divider {
   margin: 0 10px;
-  max-height: 80px; }
+  max-height: 60px;
+  display: inline-block;
+  width: 21px; }
 
 .panel {
   color: #333;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.8); }
+  background-color: #f2f2f2;
+  border-radius: 0; }
 
 .text-center {
   text-align: center; }

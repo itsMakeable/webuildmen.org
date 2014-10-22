@@ -3,12 +3,12 @@
 	[
 		{
 				"path": ".",
-				"folder_exclude_patterns": ["node_modules"]
+				"folder_exclude_patterns": ["node_modules",".sass-cache"]
 		},
 		{
 				"path": ".",
 				"name": "Documentation",
-				"file_exclude_patterns": ["*.jpg","*.png","*.gif"]
+				"file_exclude_patterns": ["*.jpg","*.png","*.gif","*.scssc"]
 		}
 	]
 }

@@ -22,9 +22,11 @@
 
 # makes sure the whole site is loaded
 $(window).load ->
-	$('.js-set-height, .tools').css 
+	$('.js-set-height').css 
 		'min-height': $(window).height()
 		'max-height': $(window).height()
+	$('.js-set-min-height').css 
+		'min-height': $(window).height()
 	# will first fade out the loading animation
 	$(".status").fadeOut()
 	# will fade out the whole DIV that covers the website.
@@ -52,21 +54,21 @@ $(document).ready ->
 	
 	# Sticky Header - http://jqueryfordesigners.com/fixed-floating-elements/         
 	top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0))
-	$(window).scroll (event) ->
+	# $(window).scroll (event) ->
 		
-		# what the y position of the scroll is
-		y = $(this).scrollTop()
+	# 	# what the y position of the scroll is
+	# 	y = $(this).scrollTop()
 		
-		# whether that's below the form
-		if y >= top
+	# 	# whether that's below the form
+	# 	if y >= top
 			
-			# if so, ad the fixed class
-			$("#main-nav").addClass "fixed"
-		else
+	# 		# if so, ad the fixed class
+	# 		$("#main-nav").addClass "fixed"
+	# 	else
 			
-			# otherwise remove it
-			$("#main-nav").removeClass "fixed"
-		return
+	# 		# otherwise remove it
+	# 		$("#main-nav").removeClass "fixed"
+	# return
 
 	return
 
@@ -235,11 +237,19 @@ $(document).ready ->
 #===  WOW ANIMATION             ====
 #=================================== 
 
-# new WOW().init();
+new WOW().init();
 
 # =================================
 #===  MATCH HEIGHT             ====
 #=================================== 
 $ ->
 	$(".equal-height").equalize children: "h6"
-	return
+	
+	$('.project-box figure')
+		.on 'mouseover', ->
+			console.log $(this)
+			$(this).css
+				'background': $(this).data('background')
+		.on 'mouseleave', ->
+			$(this).css
+				'background': ''
