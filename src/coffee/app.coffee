@@ -76,25 +76,42 @@ $(document).ready ->
 #=================================
 #===  OWL CROUSEL               ====
 #===================================
-$(document).ready ->
-	owl = $("#client-feedbacks")
-	owl.owlCarousel
-		items: 3 #10 items above 1000px browser width
-		itemsDesktop: [ #5 items between 1000px and 901px
-			1000
-			2
-		]
-		itemsDesktopSmall: [ # betweem 900px and 601px
-			900
-			1
-		]
-		itemsTablet: [ #2 items between 600 and 0
-			600
-			1
-		]
-		itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
+# $(document).ready ->
+# 	owl = $("#client-feedbacks")
+# 	owl.owlCarousel
+# 		items: 3 #10 items above 1000px browser width
+# 		itemsDesktop: [ #5 items between 1000px and 901px
+# 			1000
+# 			2
+# 		]
+# 		itemsDesktopSmall: [ # betweem 900px and 601px
+# 			900
+# 			1
+# 		]
+# 		itemsTablet: [ #2 items between 600 and 0
+# 			600
+# 			1
+# 		]
+# 		itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
 
-	return
+# 	return
+
+
+#=================================
+#===  SCROLL WAYPOINT             ====
+#=================================== 
+scrollWaypoint = ->
+	$(".works.js-set-height")
+		.waypoint
+			offset: 0
+			handler: (direction) ->
+				if direction == 'down'
+					console.log $(".works.js-set-height").offset()
+					$(".works.js-set-height")
+						.css 
+							'background-attachment': 'fixed'
+							'overflow': 'scroll'
+						
 
 
 #=================================
@@ -112,7 +129,7 @@ $(document).ready ->
 #     window.location.hash = hash;
 #   });  
 # }); 
-$("a[href^=\"#\"]").click ->
+$("a[href^=\"#\"]").on 'click', ->
 	$("html,body").animate
 		scrollTop: $(@hash).offset().top
 	, 700
@@ -174,10 +191,10 @@ $(document).ready ($) ->
 	return
 
 
-# ================================
-#===  PARALLAX                  ====
-#================================= 
-$(document).ready ->
+	# ================================
+	#===  PARALLAX                  ====
+	#================================= 
+
 	$window = $(window)
 	$("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each ->
 		$bgobj = $(this)
@@ -247,9 +264,10 @@ $ ->
 	
 	$('.project-box figure')
 		.on 'mouseover', ->
-			console.log $(this)
 			$(this).css
 				'background': $(this).data('background')
 		.on 'mouseleave', ->
 			$(this).css
 				'background': ''
+				
+	scrollWaypoint()

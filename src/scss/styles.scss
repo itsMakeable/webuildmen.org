@@ -10,10 +10,10 @@
 
 .vertical-align {
 	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	top: 45%;
+	-webkit-transform: translateY(-45%);
+	-ms-transform: translateY(-45%);
+	transform: translateY(-45%);
 }
 
 /* --------------------------------------
@@ -117,6 +117,7 @@ a.text-white:hover {
 p {
 	// margin: 0;
 	line-height: 1.6em;
+	font-size: 22px;
 }
 .full-width {
 	width: 100%;
@@ -137,8 +138,8 @@ h1, h2, h3, h4, h5, h6, p{
 	// margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	// font-size: 100%;
+	// font: inherit;
 	vertical-align: baseline;
 	line-height: 1.5em;
 	font-family: 'Vollkorn', serif;
@@ -529,15 +530,15 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 /*----  SECTION:  HOME > TOP BAR   ----*/
 
 .navbar {
-	background: #000;
+	background: #282525;
 	overflow: hidden;
 	border: 0;
 	border-radius: 0 !important;
 	text-align: left;
 	font-family: "montserrat", sans-serif;
 	font-size: 16px;
-	-webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
-	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
+	// -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
+	// box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 }
 #main-nav {
 	position: absolute;
@@ -658,8 +659,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .knowhow {
 	padding-bottom: 100px;
 	overflow: hidden;
-	// background: url("../images/background-knowhow.jpg") no-repeat;
-	// background-size: cover;
+	// background: url("../images/linedpaper.png") repeat;
+	// background-size: 412px 300px;
 }
 .star--small {
 	width: 20px;
@@ -689,6 +690,9 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	/*-webkit-box-shadow: inset 0 5px 0 rgba(0,0,0,.2), 0 5px 0 rgba(0,0,0,.2);*/
 	/*box-shadow: inset 0 5px 0 rgba(0,0,0,.2), 0 5px 0 rgba(0,0,0,.2);*/
 	background-color: #fff;
+	svg {
+		@extend .vertical-align
+	}
 }
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
 
@@ -759,6 +763,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	background: url("../images/backgrounds/bg_toolkits.jpg") no-repeat;
 	color: #fff;
 	background-size: cover;
+	overflow: hidden;
 }
 /* IMAGE GRID */
 
@@ -807,6 +812,11 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 // 	transition-duration: 250ms;
 // }
 /* Flexbox is used for centering the heading */
+
+// .project__scoll-container {
+// 	height: 350px;
+// 	overflow-y: scroll;
+// }
 .project-box {
 	display: inline-block;
 	width: 100%;
@@ -1011,6 +1021,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	// background-size: cover;
 	// background-position: center top;
 	background: #282525;
+	background: #282525 url("../images/stardust.png") repeat top left;
+	background-size: 798px 798px;
 	// p {
 	// 	font-size: 18px;
 	// }
@@ -1205,8 +1217,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .our-community {
 	padding-bottom: 66px;
 	padding-top: 40px;
-	// background: #eee url("../images/background-community.jpg") no-repeat center;
-	// background-size: cover;
+	// background: #282525 url("../images/stardust.png") repeat top left;
+	// background-size: 798px 798px;
 	background-color: #282525;
 }
 .community-member {
@@ -1731,7 +1743,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 /* ----------------------------------------*/
 
 footer {
-	background: #000;
+	background: #282525;
 	padding: 40px 0;
 	h6 {
 		font-family: 'montserrat', sans-serif;

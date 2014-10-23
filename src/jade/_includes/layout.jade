@@ -7,6 +7,14 @@ head
 		meta(name='author', content='Makeable')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title We Build Men
+	
+		style.
+			[data-aload] { background-image: none !important; }
+
+		script(src='//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
+		script(type="text/javascript").
+			function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
+
 		meta(property='og:locale', content='en_US')
 		meta(property='og:title', content='We Build Men')
 		meta(property='og:site_name', content='We Build Men')
@@ -34,12 +42,13 @@ head
 		link(rel='stylesheet', href='/css/styles.css')
 		//- WEBFONT 
 		link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic%7CMontserrat:700,400%7CHomemade+Apple%7CLobster+Two:400,400italic%7CVollkorn:400italic,700italic,400,700', rel='stylesheet', type='text/css')
-		//- link(href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700', rel='stylesheet', type='text/css')
+
 		//if lt IE 9
 			script(src='/js/html5shiv.js')
 			script(src='/js/respond.min.js')
-		//- JQUERY 
-		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+		
+
+
 
 		block head
 	body
@@ -86,19 +95,55 @@ head
 						//- 	a.text-white(href='https://twitter.com/webuildmen', target='_blank') Follow @webuildmen on Twitter
 						//- br
 						//- p © 2014
-			//- END CONTAINER 
-		//- END FOOOTER  
+
 		//- SCRIPTS 
-		script(src='/js/bootstrap.min.js')
-		script(src='/js/jquery.scrollTo.min.js')
-		script(src='/js/wow.min.js')
-		script(src='/js/jquery.nav.js')
+		//- JQUERY 
+		//- script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+		//- script(src='/js/bootstrap.min.js')
+		//- script(src='/js/jquery.scrollTo.min.js')
+		//- script(src='/js/wow.min.js')
+		//- script(src='/js/jquery.nav.js')
 		//- <script src="js/jquery.knob.js"></script> 
-		script(src='/js/owl.carousel.min.js')
+		//- script(src='/js/owl.carousel.min.js')
 		//- <script src="js/smoothscroll.js"></script> 
 		//- <script src="js/jquery.vegas.min.js"></script> 
-		script(src='/js/equalize.js')
-		script(src='/js/main.js')
+		//- script(src='/js/equalize.js')
+		//- script(src='/js/main.js')
+		script
+			:coffeescript
+				head.load [
+					{
+						jquery: "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+					}
+					{
+						bootstrap: "/js/bootstrap.min.js"
+					}
+					# {
+					# 	scrollto: "/js/jquery.scrollTo.min.js"
+					# }
+					{
+						wow: "/js/wow.min.js"
+					}
+					{
+						nav: "/js/jquery.nav.js"
+					}
+					{
+						equalize: "/js/equalize.js"
+					}
+					{
+						tagboard: "https://tagboard.com/public/js/embed.js"
+					}
+					{
+						waypoints: "//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"
+					}
+					{
+						app: "/js/main.js"
+					}
+				], ->
+					window.onload = ->
+						aload()
+						return
+
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

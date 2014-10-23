@@ -1,4 +1,4 @@
-var msViewportStyle;
+var msViewportStyle, scrollWaypoint;
 
 $(window).load(function() {
   $('.js-set-height').css({
@@ -28,19 +28,22 @@ $(document).ready(function() {
   top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
 });
 
-$(document).ready(function() {
-  var owl;
-  owl = $("#client-feedbacks");
-  owl.owlCarousel({
-    items: 3,
-    itemsDesktop: [1000, 2],
-    itemsDesktopSmall: [900, 1],
-    itemsTablet: [600, 1],
-    itemsMobile: false
+scrollWaypoint = function() {
+  return $(".works.js-set-height").waypoint({
+    offset: 0,
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log($(".works.js-set-height").offset());
+        return $(".works.js-set-height").css({
+          'background-attachment': 'fixed',
+          'overflow': 'scroll'
+        });
+      }
+    }
   });
-});
+};
 
-$("a[href^=\"#\"]").click(function() {
+$("a[href^=\"#\"]").on('click', function() {
   $("html,body").animate({
     scrollTop: $(this.hash).offset().top
   }, 700);
@@ -49,6 +52,7 @@ $("a[href^=\"#\"]").click(function() {
 });
 
 $(document).ready(function($) {
+  var $window;
   $(".more").on("click", function(event) {
     var content, href, portfolioList;
     event.preventDefault();
@@ -92,10 +96,7 @@ $(document).ready(function($) {
       portfolioList.fadeIn(600);
     }), 800);
   });
-});
-
-$(document).ready(function() {
-  var $window;
+  return;
   $window = $(window);
   $("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each(function() {
     var $bgobj;
@@ -117,8 +118,7 @@ $(function() {
   $(".equal-height").equalize({
     children: "h6"
   });
-  return $('.project-box figure').on('mouseover', function() {
-    console.log($(this));
+  $('.project-box figure').on('mouseover', function() {
     return $(this).css({
       'background': $(this).data('background')
     });
@@ -127,4 +127,5 @@ $(function() {
       'background': ''
     });
   });
+  return scrollWaypoint();
 });
