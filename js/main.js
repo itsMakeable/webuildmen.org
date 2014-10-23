@@ -113,3 +113,7 @@ $(function() {
     });
   });
 });
+
+$(window).on('load', function() {
+  return scrollWaypoint();
+});

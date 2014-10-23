@@ -96,6 +96,30 @@ $(document).ready ->
 
 # 	return
 
+
+#=================================
+#===  SCROLL WAYPOINT             ====
+#=================================== 
+# scrollWaypoint = ->
+# 	$(".works.js-set-height .container")
+# 		.waypoint
+# 			offset: 0
+# 			handler: (direction) ->
+# 				console.log 'project'
+# 				$("body")
+# 					.css 
+# 						'overflow': 'hidden'
+
+	# $(".our-community .container")
+	# 	.waypoint
+	# 		offset: $(".works.js-set-height").height()
+	# 		handler: (direction) ->
+	# 			console.log 'community'
+	# 			if direction == 'down'
+	# 				$(".works.js-set-height")
+	# 					.css 
+	# 						'overflow': 'hidden'
+
 #=================================
 #===  SMOOTH SCROLL             ====
 #=================================== 
@@ -251,4 +275,7 @@ $ ->
 		.on 'mouseleave', ->
 			$(this).css
 				'background': ''
+
+$(window).on 'load', ->
+	scrollWaypoint()
 		
