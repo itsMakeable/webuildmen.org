@@ -43,9 +43,7 @@ body {
 	text-align: center;
 	// -webkit-transform: translateZ(0px);
 }
-section, footer {
-	-webkit-transform: translateZ(0px);
-}
+
 .container-contents {
 	margin-top: 8%;
 }
@@ -758,12 +756,13 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 .works {
 	padding-bottom: 100px;
-	background: #3d69bb;
+	color: #fff;
 	min-height: 800px;
 	background: url("../images/backgrounds/bg_toolkits.jpg") no-repeat;
-	color: #fff;
 	background-size: cover;
+	background-attachment: fixed;
 	overflow: hidden;
+	position: static !important;
 }
 /* IMAGE GRID */
 
@@ -813,10 +812,10 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 // }
 /* Flexbox is used for centering the heading */
 
-// .project__scoll-container {
-// 	height: 350px;
-// 	overflow-y: scroll;
-// }
+.project__scoll-container {
+	max-height: 1050px;
+	overflow-y: hidden;
+}
 .project-box {
 	display: inline-block;
 	width: 100%;

@@ -96,24 +96,6 @@ $(document).ready ->
 
 # 	return
 
-
-#=================================
-#===  SCROLL WAYPOINT             ====
-#=================================== 
-scrollWaypoint = ->
-	$(".works.js-set-height")
-		.waypoint
-			offset: 0
-			handler: (direction) ->
-				if direction == 'down'
-					console.log $(".works.js-set-height").offset()
-					$(".works.js-set-height")
-						.css 
-							'background-attachment': 'fixed'
-							'overflow': 'scroll'
-						
-
-
 #=================================
 #===  SMOOTH SCROLL             ====
 #=================================== 
@@ -269,5 +251,4 @@ $ ->
 		.on 'mouseleave', ->
 			$(this).css
 				'background': ''
-				
-	scrollWaypoint()
+		

@@ -1,4 +1,4 @@
-var msViewportStyle, scrollWaypoint;
+var msViewportStyle;
 
 $(window).load(function() {
   $('.js-set-height').css({
@@ -27,21 +27,6 @@ $(document).ready(function() {
   });
   top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
 });
-
-scrollWaypoint = function() {
-  return $(".works.js-set-height").waypoint({
-    offset: 0,
-    handler: function(direction) {
-      if (direction === 'down') {
-        console.log($(".works.js-set-height").offset());
-        return $(".works.js-set-height").css({
-          'background-attachment': 'fixed',
-          'overflow': 'scroll'
-        });
-      }
-    }
-  });
-};
 
 $("a[href^=\"#\"]").on('click', function() {
   $("html,body").animate({
@@ -118,7 +103,7 @@ $(function() {
   $(".equal-height").equalize({
     children: "h6"
   });
-  $('.project-box figure').on('mouseover', function() {
+  return $('.project-box figure').on('mouseover', function() {
     return $(this).css({
       'background': $(this).data('background')
     });
@@ -127,5 +112,4 @@ $(function() {
       'background': ''
     });
   });
-  return scrollWaypoint();
 });
