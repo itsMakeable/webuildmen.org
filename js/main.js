@@ -1,16 +1,4 @@
-var msViewportStyle;
-
-$(window).load(function() {
-  $('.js-set-height').css({
-    'min-height': $(window).height(),
-    'max-height': $(window).height()
-  });
-  $('.js-set-min-height').css({
-    'min-height': $(window).height()
-  });
-  $(".status").fadeOut();
-  $(".preloader").delay(1000).fadeOut("slow");
-});
+var bottomWaypoint, msViewportStyle;
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   msViewportStyle = document.createElement("style");
@@ -18,25 +6,49 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector("head").appendChild(msViewportStyle);
 }
 
-$(document).ready(function() {
+$(function() {
   var top;
   $("#home .main-nav-list").onePageNav({
     scrollThreshold: 0.2,
     scrollOffset: 75,
     changeHash: true
   });
-  top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
+  return top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
 });
+
+bottomWaypoint = function() {
+  $("body").waypoint({
+    offset: -$(document).height(),
+    handler: function(direction) {
+      if (direction === 'down') {
+        return $("footer").addClass('is-bottom');
+      } else {
+        return $("footer").removeClass('is-bottom');
+      }
+    }
+  });
+  return $(".tools").waypoint({
+    offset: -$(".tools").scrollHeight(),
+    context: '.tools',
+    handler: function(direction) {
+      if (direction === 'down') {
+        return $("footer").addClass('is-bottom');
+      } else {
+        return $("footer").removeClass('is-bottom');
+      }
+    }
+  });
+};
 
 $("a[href^=\"#\"]").on('click', function() {
   $("html,body").animate({
     scrollTop: $(this.hash).offset().top
   }, 700);
   return false;
-  e.preventDefault();
+  return e.preventDefault();
 });
 
-$(document).ready(function($) {
+$(function($) {
   var $window;
   $(".more").on("click", function(event) {
     var content, href, portfolioList;
@@ -71,7 +83,7 @@ $(document).ready(function($) {
     content = $("#loaded-content");
     content.fadeOut(400);
     $("#back-button").fadeOut(400);
-    setTimeout((function() {
+    return setTimeout((function() {
       portfolioList.animate({
         marginLeft: "0"
       }, {
@@ -81,16 +93,15 @@ $(document).ready(function($) {
       portfolioList.fadeIn(600);
     }), 800);
   });
-  return;
   $window = $(window);
-  $("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each(function() {
+  return $("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each(function() {
     var $bgobj;
     $bgobj = $(this);
-    $(window).scroll(function() {
+    return $(window).scroll(function() {
       var coords, yPos;
       yPos = -($window.scrollTop() / $bgobj.data("speed"));
       coords = "50% " + yPos + "px";
-      $bgobj.css({
+      return $bgobj.css({
         backgroundPosition: coords
       });
     });
@@ -115,5 +126,14 @@ $(function() {
 });
 
 $(window).on('load', function() {
-  return scrollWaypoint();
+  bottomWaypoint();
+  $('.js-set-height').css({
+    'min-height': $(window).height(),
+    'max-height': $(window).height()
+  });
+  $('.js-set-min-height').css({
+    'min-height': $(window).height()
+  });
+  $(".status").fadeOut();
+  return $(".preloader").delay(1000).fadeOut("slow");
 });

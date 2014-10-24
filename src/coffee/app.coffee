@@ -18,20 +18,7 @@
 
 # =================================
 #   LOADER                     
-#=================================== 
-
-# makes sure the whole site is loaded
-$(window).load ->
-	$('.js-set-height').css 
-		'min-height': $(window).height()
-		'max-height': $(window).height()
-	$('.js-set-min-height').css 
-		'min-height': $(window).height()
-	# will first fade out the loading animation
-	$(".status").fadeOut()
-	# will fade out the whole DIV that covers the website.
-	$(".preloader").delay(1000).fadeOut "slow"
-	return
+#===================================
 
 
 # =================================
@@ -45,7 +32,7 @@ if navigator.userAgent.match(/IEMobile\/10\.0/)
 # =================================
 #===  STICKY NAV                 ====
 #=================================== 
-$(document).ready ->
+$ ->
 	$("#home .main-nav-list").onePageNav
 		scrollThreshold: 0.2 # Adjust if Navigation highlights too early or too late
 		scrollOffset: 75 #Height of Navigation Bar
@@ -70,8 +57,24 @@ $(document).ready ->
 	# 		$("#main-nav").removeClass "fixed"
 	# return
 
-	return
-
+bottomWaypoint = ->
+	$("body")
+		.waypoint
+			offset: -$(document).height()
+			handler: (direction) ->
+				if direction == 'down'
+					$("footer").addClass 'is-bottom'
+				else
+					$("footer").removeClass 'is-bottom'
+	$(".tools")
+		.waypoint
+			offset: -$(".tools").scrollHeight()
+			context: '.tools'
+			handler: (direction) ->
+				if direction == 'down'
+					$("footer").addClass 'is-bottom'
+				else
+					$("footer").removeClass 'is-bottom'
 
 #=================================
 #===  OWL CROUSEL               ====
@@ -141,12 +144,11 @@ $("a[href^=\"#\"]").on 'click', ->
 	, 700
 	return false
 	e.preventDefault()
-	return
 	
 # ================================
 #===  PROJECT LOADING           ====
 #================================= 
-$(document).ready ($) ->
+$ ($) ->
 	$(".more").on "click", (event) ->
 		event.preventDefault()
 		href = $(this).attr("href")
@@ -192,15 +194,11 @@ $(document).ready ($) ->
 			portfolioList.fadeIn 600
 			return
 		), 800
-		return
-
-	return
 
 
 	# ================================
-	#===  PARALLAX                  ====
+	#===  PARALLAX                ====
 	#================================= 
-
 	$window = $(window)
 	$("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each ->
 		$bgobj = $(this)
@@ -208,11 +206,6 @@ $(document).ready ($) ->
 			yPos = -($window.scrollTop() / $bgobj.data("speed"))
 			coords = "50% " + yPos + "px"
 			$bgobj.css backgroundPosition: coords
-			return
-
-		return
-
-	return
 
 
 # ================================
@@ -276,6 +269,17 @@ $ ->
 			$(this).css
 				'background': ''
 
+
+
 $(window).on 'load', ->
-	scrollWaypoint()
-		
+	bottomWaypoint()
+
+	$('.js-set-height').css 
+		'min-height': $(window).height()
+		'max-height': $(window).height()
+	$('.js-set-min-height').css 
+		'min-height': $(window).height()
+	# will first fade out the loading animation
+	$(".status").fadeOut()
+	# will fade out the whole DIV that covers the website.
+	$(".preloader").delay(1000).fadeOut "slow"

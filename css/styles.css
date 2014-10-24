@@ -7925,7 +7925,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 /*----  SECTION:  HOME > TOP BAR   ----*/
 .navbar {
-  background: #282525;
+  background: #1c1c1c;
   overflow: hidden;
   border: 0;
   border-radius: 0 !important;
@@ -8049,6 +8049,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .knowhow {
   padding-bottom: 100px;
   overflow: hidden; }
+  .knowhow h5 {
+    font-family: 'montserrat', sans-serif; }
 
 .star--small {
   width: 20px;
@@ -8336,7 +8338,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   padding-bottom: 100px;
   background: #282525;
   background: #282525 url("../images/stardust.png") repeat top left;
-  background-size: 798px 798px; }
+  background-size: 266px 266px; }
 
 .about-us .big-intro {
   text-align: right;
@@ -8355,6 +8357,13 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     font-size: 44px;
     text-align: left;
     text-transform: uppercase; }
+
+@-webkit-keyframes expandRight {
+  0% {
+    transform: translateX(100%); }
+
+  100% {
+    transform: translateX(0%); } }
 
 @keyframes expandRight {
   0% {
@@ -8383,8 +8392,12 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   @media screen and (min-width: 1200px) {
     .tools {
       padding: 80px 20% 40px 64px; } }
+  @media screen and (min-width: 1024px) {
+    .tools {
+      padding: 80px 5% 40px 64px; } }
   @media screen and (min-width: 992px) {
     .tools {
+      -webkit-animation: expandRight 1s linear 1s forwards;
       animation: expandRight 1s linear 1s forwards;
       transform: translateX(100%);
       width: 49%;
@@ -8401,9 +8414,10 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
  **   SECTION:  OUR Community              -----
 -----------------------------------------*/
 .our-community {
-  padding-bottom: 66px;
+  padding-bottom: 166px;
   padding-top: 40px;
-  background-color: #282525; }
+  background: #282525 url("../images/stardust.png") repeat top left;
+  background-size: 798px 798px; }
 
 .community-member {
   border-radius: 4px;
@@ -8912,8 +8926,19 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 /*   SECTION:  FOOTER                        */
 /* ----------------------------------------*/
 footer {
-  background: #282525;
-  padding: 40px 0; }
+  background: #1c1c1c;
+  padding: 20px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: -65px;
+  z-index: 9999;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  transition: transform 0.3s ease; }
+  footer.is-bottom {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    transition: transform 0.3s ease 0.3s; }
   footer h6 {
     font-family: 'montserrat', sans-serif;
     font-weight: 400;

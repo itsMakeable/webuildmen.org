@@ -2,7 +2,7 @@ extends _includes/layout
 
 block content
 	//- HOME SECTION
-	header#home.header.js-set-height
+	header#home.header.js-set-min-height
 		.container.container-contents
 			.visible-xs(style='margin-top: 20%;')
 			.visible-sm(style='margin-top: 5%;')
@@ -29,7 +29,7 @@ block content
 		br
 	//- END HOME SECTION  
 	//- ABOUT US SECTION
-	section#aboutus.about-us
+	section#aboutus.about-us(data-type='background' data-speed='1.1')
 		.container
 			.section-header
 				.visible-xs.visible-sm.visible-md.visible-lg(style='margin-top: 8%;')
@@ -97,8 +97,8 @@ block content
 				br
 				br
 			//- 4 knowhow BOXES 
-			.row
-				.col-lg-4.col-sm-4.knowhow-box.yellow.equal-heightwow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.yellow.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/1.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -106,7 +106,7 @@ block content
 					h5.yellow-border-bottom Provide Structure
 					h6.text-left
 						| Boys need structure. In partnership with your mentee, develop a schedule, routine or rituals for the length of your formal relationship. Take on his ideas and work as a team to keep on&nbsp;track.
-				.col-lg-4.col-sm-4.knowhow-box.green.equal-heightw.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.green.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/2.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -114,7 +114,7 @@ block content
 					h5.green-border-bottom Pinpoint a Passion
 					h6.text-left
 						| Help your mentee cultivate a passion. Most young men need some kind of anchor-a sport, music, or hobby-that they can turn to when life gets stressful, so in your early interactions, try to figure out what that passion is (or could be), and pursue&nbsp;it.
-				.col-lg-4.col-sm-4.knowhow-box.blu.equal-heightw.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.blu.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/3.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -122,8 +122,8 @@ block content
 					h5.blue-border-bottom Have fun, Be Active
 					h6.text-left
 						| Play games, go bowling, go to the movies, etc. Give the teen you're mentoring a voice and choice in deciding on activities–it demonstrates you trust them, and it helps build their skills and confidence.  And, when possible and appropriate, try and do something active. Movement stimulates the brain to process emotions, and even something as low-key as walking can facilitate&nbsp;conversation.
-			.row
-				.col-lg-4.col-sm-4.knowhow-box.yellow.equal-heightwow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.yellow.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/4.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -131,7 +131,7 @@ block content
 					h5.yellow-border-bottom Ask Questions
 					h6.text-left
 						| Asking your mentee open questions will help you as a mentor to identify their real needs, values and passions. It's also a great way to get your mentee to think through situations themselves and draw out the consequences of the various choices or courses of action they can take. During these conversations, you can share your wisdom, without making decisions for your mentee. That's their&nbsp;job.
-				.col-lg-4.col-sm-4.knowhow-box.red.equal-height.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.red.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/5.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -139,7 +139,7 @@ block content
 					h5.red-border-bottom Listen
 					h6.text-left
 						| By just listening—not criticizing or judging—you'll develop trust. Respect the trust the young man places in you–show them that you understand and are committed to the relationship. Mentees benefit greatly from the opportunity of having a good mentor listen to them. Allow them to explore their thoughts and ideas openly with you. This will often help them unravel their thinking and gain insights about a situation as they share their concerns with&nbsp;you.
-				.col-lg-4.col-sm-4.knowhow-box.green.equal-heightw.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.green.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/6.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -147,8 +147,8 @@ block content
 					h5.green-border-bottom Provide Helpful Feedback
 					h6.text-left
 						| Not all feedback is helpful. A good mentor knows this and will deliver feedback in a way that will help their mentee gain insight to further develop specific qualities or skills. For example, a good mentor will always ask for permission to give feedback before doing so. Giving unwelcome feedback can be detrimental to any mentoring relationship. Instead, explain what you'd like to talk about first and highlight the benefits of doing&nbsp;this.
-			.row
-				.col-lg-4.col-sm-4.knowhow-box.green.equal-heightw.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.green.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/7.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -156,7 +156,7 @@ block content
 					h5.green-border-bottom Offer Advice, But Only When Your Mentee Asks For&nbsp;It
 					h6.text-left
 						| Asking your mentee open questions will help you as a mentor to identify their real needs, values and passions. It's also a great way to get your mentee to think through situations themselves and draw out the consequences of the various choices or courses of action they can take. During these conversations, you can share your wisdom, without making decisions for your mentee. That's their&nbsp;job.
-				.col-lg-4.col-sm-4.knowhow-box.red.equal-height.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.red.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/8.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -164,7 +164,7 @@ block content
 					h5.red-border-bottom Remember You Are a Mentor, Not a Best&nbsp;Friend
 					h6.text-left
 						| Good mentors are respected by their mentees. A mentee can learn a lot from his mentor simply by watching how his mentor behaves in any particular situation, so it's important that you're acting like your best self around them. No cursing, no negativity, no&nbsp;second-guessing.
-				.col-lg-4.col-sm-4.knowhow-box.blue.equal-heightw.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-sm-4.knowhow-box.blue.equal-height
 					.service-icon(style='font-size: 76px;')
 						//- img(src='images/numbers/9.svg', alt='', height='70px')
 						svg(width='100%' height='70px')
@@ -188,7 +188,7 @@ block content
 					use(xlink:href='#toolkits') 
 				br
 				br
-				p
+				h4
 					| Ready to go but don't know what, when or how? We've got you covered with a few toolkits (complete with tips and hacks) from Popular Mechanics, Esquire and Chef Brian Lewis to get you out there—for a full day, an afternoon or an evening's worth of&nbsp;building.
 			.project__scoll-container
 				each val in [1, 2, 3, 4, 5]
@@ -244,7 +244,7 @@ block content
 					a.btn.btn-primary.custom-button.button-stroke-white(href='mailto:webuildmen@webuildmen.org') Submit
 	//- END WORKS SECTION 
 	//- COMMUNITY SECTION
-	section#community.our-community
+	section#community.our-community(data-type='background' data-speed='1.1')
 		.container
 			.visible-xs(style='margin-top: 8%;')
 			.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
@@ -260,3 +260,12 @@ block content
 			script.
 				var tagboardOptions = {tagboard:"webuildmen/188889", darkMode: true};
 	//- END OUR COMMUNITY SECTION 
+
+block footer
+	//- script
+	//- 	:coffeescript
+	//- 		head.load [
+	//- 			{
+	//- 				tagboard: "https://tagboard.com/public/js/embed.js"
+	//- 			}
+	//- 		], ->
