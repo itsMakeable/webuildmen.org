@@ -8336,9 +8336,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   /*background: rgba(0, 0, 0, 0.5);*/
   color: #f0f0f0;
   padding-bottom: 100px;
-  background: #282525;
   background: #282525 url("../images/stardust.png") repeat top left;
-  background-size: 266px 266px; }
+  background-size: 399px 399px; }
 
 .about-us .big-intro {
   text-align: right;
@@ -8360,16 +8359,20 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 @-webkit-keyframes expandRight {
   0% {
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    opacity: 0; }
 
   100% {
+    opacity: 1;
     transform: translateX(0%); } }
 
 @keyframes expandRight {
   0% {
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    opacity: 0.5; }
 
   100% {
+    opacity: 1;
     transform: translateX(0%); } }
 
 .tools {
@@ -8397,8 +8400,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
       padding: 80px 5% 40px 64px; } }
   @media screen and (min-width: 992px) {
     .tools {
-      -webkit-animation: expandRight 1s linear 1s forwards;
-      animation: expandRight 1s linear 1s forwards;
+      -webkit-animation: expandRight 1.6s ease-out 0.3s forwards;
+      animation: expandRight 1.6s ease-out 0.3s forwards;
       transform: translateX(100%);
       width: 49%;
       position: fixed;
@@ -8417,7 +8420,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   padding-bottom: 166px;
   padding-top: 40px;
   background: #282525 url("../images/stardust.png") repeat top left;
-  background-size: 798px 798px; }
+  background-size: 399px 399px; }
 
 .community-member {
   border-radius: 4px;
@@ -8934,11 +8937,11 @@ footer {
   z-index: 9999;
   -webkit-transform: translateY(30px);
   transform: translateY(30px);
-  transition: transform 0.3s ease; }
+  transition: transform 0.1s ease; }
   footer.is-bottom {
     -webkit-transform: translateY(-65px);
     transform: translateY(-65px);
-    transition: transform 0.3s ease 0.3s; }
+    transition: transform 0.4s ease; }
   footer h6 {
     font-family: 'montserrat', sans-serif;
     font-weight: 400;

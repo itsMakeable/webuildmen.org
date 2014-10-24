@@ -1022,9 +1022,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	// -webkit-background-size: cover;
 	// background-size: cover;
 	// background-position: center top;
-	background: #282525;
 	background: #282525 url("../images/stardust.png") repeat top left;
-	background-size: 266px 266px;
+	background-size: 399px 399px;
 	// p {
 	// 	font-size: 18px;
 	// }
@@ -1057,16 +1056,20 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 @-webkit-keyframes expandRight {
 	0% {
 		transform: translateX(100%);
+		opacity: 0;
 	}
 	100% {
+		opacity: 1;
 		transform: translateX(0%);
 	}
 }
 @keyframes expandRight {
 	0% {
 		transform: translateX(100%);
+		opacity: 0.5;
 	}
 	100% {
+		opacity: 1;
 		transform: translateX(0%);
 	}
 }
@@ -1101,8 +1104,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 		padding: 80px 5% 40px 64px;
 	}
 	@media screen and (min-width: 992px) {
-		-webkit-animation: expandRight 1s linear 1s forwards;
-		animation: expandRight 1s linear 1s forwards;
+		-webkit-animation: expandRight 1.6s ease-out 0.3s forwards;
+		animation: expandRight 1.6s ease-out 0.3s forwards;
 		transform: translateX(100%);
 		width: 49%;
 		position: fixed;
@@ -1232,7 +1235,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	padding-bottom: 166px;
 	padding-top: 40px;
 	background: #282525 url("../images/stardust.png") repeat top left;
-	background-size: 798px 798px;
+	background-size: 399px 399px;
 	// background-color: #282525;
 }
 .community-member {
@@ -1765,11 +1768,11 @@ footer {
 	z-index: 9999;
 	-webkit-transform: translateY(30px);
 	transform: translateY(30px);
-	transition: transform 0.3s ease;
+	transition: transform 0.1s ease;
 	&.is-bottom {
 		-webkit-transform: translateY(-65px);
 		transform: translateY(-65px);
-		transition: transform 0.3s ease 0.3s;
+		transition: transform 0.4s ease;
 	}
 	h6 {
 		font-family: 'montserrat', sans-serif;

@@ -3,6 +3,7 @@ extends ../../_includes/layout
 block content
 	section.about-us.js-set-height(style='padding-top:150px;background: url("/images/backgrounds/bg_popular-machanics-2.jpg") no-repeat; background-size: cover; background-position: top left;')
 		.container
+
 			//- SECTION HEADER
 			//- .section-header
 			//- 	//- SECTION TITLE
@@ -13,10 +14,10 @@ block content
 			//- 	br
 			//- 	br
 			//- 	br
-			//- END SECTION HEADER
-			//- 3 COLUMNS OF ABOUT US
+			//- TODO: add company logo
+			//- TODO: add tagline
+			//- TODO: work on typography
 			.row
-				//- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY
 				.col-lg-4.col-md-4.column
 					.big-intro.wow.fadeInLeft.animated.tools__title(data-wow-offset='50', data-wow-duration='1.5s', data-wow-delay='0.6s')
 						| Build a Go-Kart like a Champ
@@ -24,38 +25,36 @@ block content
 				//- COLUMN 2 - BRIEF ABOUT THE COMPANY
 				.col-lg-6.col-md-7.column
 					.tools.js-set-height
-						.panel
+						.tools__scroll-container
+							.panel
+								p
+									| Download the schematic 
+									a(href='http://www.popularmechanics.com/cm/popularmechanics/data/Go-Kart-Plans-0611.pdf', target='_blank') here
+									| . These plans (or ones from other sites like 
+									a(href='http://www.spidercarts.com/') spidercarts.com
+									| ) have the dimensions for the parts, particularly those that make the frame. We’ve provided some extra help here:
+							h3 Instructions
+							h5 The Frame
 							p
-								| Download the schematic 
-								a(href='http://www.popularmechanics.com/cm/popularmechanics/data/Go-Kart-Plans-0611.pdf', target='_blank') here
-								| . These plans (or ones from other sites like 
-								a(href='http://www.spidercarts.com/') spidercarts.com
-								| ) have the dimensions for the parts, particularly those that make the frame. We’ve provided some extra help here:
-						h3 Instructions
-						h5 The Frame
-						p
-							| Use a hacksaw or chop saw to cut metal stock to length. Clamp the steel in a vise and file or grind the cut edges smooth. Using a MIG welder, tack together the parts to check for a good fit, and make final welds to complete the frame.
-						h5 Steering
-						p
-							| Weld an upper steering block to the top of the kart's steering post. Weld the lower steering block to the front of the frame. Screw the steering wheel to the steering shaft and thread the shaft assembly through the upper and lower blocks. Bolt a pair of spherical rod ends to the steering arm at the bottom of the shaft, using nylock nuts.
-						p
-							| Weld spindle brackets to the front corners of the frame. Bolt the tie rods' opposite ends to the brackets' arms and connect the rods to both ends. Thread each bracket's stub axle into the front wheels' hubs. Mount the front tires on rims and bolt the rims to the hubs. Consider adjusting the positions of the steering shaft and tie rods until the steering performs properly.
-						h5 Rear Axle
-						p
-							| Weld bearing hangers to the bottom face of the frame's ten-inch rear legs. Center the sprocket, Uni-Hub, and brake drum on the axle. Wedge bearings between a pair of bearing cassettes and use the hardware in a bearing kit to fasten the cassettes to both hangers. (Expect to adjust the axle parts again.) On the axle ends, mount wheel hubs, fit rear tires onto the rims, and bolt the rims to the wheel hubs.
-						h5 Engine
-						p
-							| Buy accessories together with the engine to ensure compatibility. Weld a mounting plate to the rear center of the frame, and bolt the engine to it. Add a clutch to the engine crankshaft by using set screws in the clutch hub. Slide the Uni-Hub along the axle to align the axle sprocket with the clutch sprocket. Weld a bent 3/8-inch rod to the frame so it crosses in front of the brake drum to anchor the brake band. Tighten the set screws on the Uni-Hub, drum, and bearings.
-						p
-							| Loop chain around both sprockets. Remove links as needed to adjust the chain. It should have a half-inch of play.
-						h5 Cables
-						p
-							| Attach brake and throttle cables to the left and right foot pedals. Lead cables to the rear and fasten the sheaths to the frame. Pull cables just to the point of tension. Use wire stops to pin the brake cable to the upper end of the brake band so that the band can cinch around the drum to arrest the axle's motion. Pin the throttle cable to the engine throttle in the idle position. Mount a kill switch; lead the cable to the engine.
-						p
-							| Start the engine with the kart on blocks to test the pedal connections. If you wish, add a floorboard so that the driver won't kick the tie rods (or the ground).
-						p
-							| Make a seat by stapling vinyl and foam cushioning to plywood. Bolt it to the seat post and the frame.
-						p Put a helmet on the driver. Have some fun.
-
-			//- END 3 COLUMNS OF ABOUT US
-		//- END CONTAINER
+								| Use a hacksaw or chop saw to cut metal stock to length. Clamp the steel in a vise and file or grind the cut edges smooth. Using a MIG welder, tack together the parts to check for a good fit, and make final welds to complete the frame.
+							h5 Steering
+							p
+								| Weld an upper steering block to the top of the kart's steering post. Weld the lower steering block to the front of the frame. Screw the steering wheel to the steering shaft and thread the shaft assembly through the upper and lower blocks. Bolt a pair of spherical rod ends to the steering arm at the bottom of the shaft, using nylock nuts.
+							p
+								| Weld spindle brackets to the front corners of the frame. Bolt the tie rods' opposite ends to the brackets' arms and connect the rods to both ends. Thread each bracket's stub axle into the front wheels' hubs. Mount the front tires on rims and bolt the rims to the hubs. Consider adjusting the positions of the steering shaft and tie rods until the steering performs properly.
+							h5 Rear Axle
+							p
+								| Weld bearing hangers to the bottom face of the frame's ten-inch rear legs. Center the sprocket, Uni-Hub, and brake drum on the axle. Wedge bearings between a pair of bearing cassettes and use the hardware in a bearing kit to fasten the cassettes to both hangers. (Expect to adjust the axle parts again.) On the axle ends, mount wheel hubs, fit rear tires onto the rims, and bolt the rims to the wheel hubs.
+							h5 Engine
+							p
+								| Buy accessories together with the engine to ensure compatibility. Weld a mounting plate to the rear center of the frame, and bolt the engine to it. Add a clutch to the engine crankshaft by using set screws in the clutch hub. Slide the Uni-Hub along the axle to align the axle sprocket with the clutch sprocket. Weld a bent 3/8-inch rod to the frame so it crosses in front of the brake drum to anchor the brake band. Tighten the set screws on the Uni-Hub, drum, and bearings.
+							p
+								| Loop chain around both sprockets. Remove links as needed to adjust the chain. It should have a half-inch of play.
+							h5 Cables
+							p
+								| Attach brake and throttle cables to the left and right foot pedals. Lead cables to the rear and fasten the sheaths to the frame. Pull cables just to the point of tension. Use wire stops to pin the brake cable to the upper end of the brake band so that the band can cinch around the drum to arrest the axle's motion. Pin the throttle cable to the engine throttle in the idle position. Mount a kill switch; lead the cable to the engine.
+							p
+								| Start the engine with the kart on blocks to test the pedal connections. If you wish, add a floorboard so that the driver won't kick the tie rods (or the ground).
+							p
+								| Make a seat by stapling vinyl and foam cushioning to plywood. Bolt it to the seat post and the frame.
+							p Put a helmet on the driver. Have some fun.

@@ -1,24 +1,6 @@
-# ================================
-#===  BACKGROUND SLIDER        ====
-#================================= 
-
-# $.vegas('slideshow', {
-#   delay:7000,
-#   backgrounds:[
-#     { src:'images/backgrounds/bg1.jpg', fade:1000 },
-#     // { src:'images/backgrounds/bg2.jpg', fade:1000 },
-#     // { src:'images/backgrounds/bg3.jpg', fade:1000 },
-#     // { src:'images/backgrounds/bg4.jpg', fade:1000 }
-#   ]
-# });
-
-# $.vegas('overlay', {
-#   src:'../images/overlays/06.png'
-# });
-
-# =================================
-#   LOADER                     
-#===================================
+# TODO: Refactor app.coffee
+# TODO: Recheck heights on window resize
+# TODO: Add mobile support to events
 
 
 # =================================
@@ -60,17 +42,18 @@ $ ->
 bottomWaypoint = ->
 	$("body")
 		.waypoint
-			offset: -$(document).height()
+			offset: -$(document).height() - 800
 			handler: (direction) ->
 				if direction == 'down'
 					$("footer").addClass 'is-bottom'
 				else
 					$("footer").removeClass 'is-bottom'
-	$(".tools")
+	$(".tools__scroll-container")
 		.waypoint
-			offset: -$(".tools").scrollHeight()
+			offset: -$(".tools__scroll-container").height() + $(window).height()
 			context: '.tools'
 			handler: (direction) ->
+				
 				if direction == 'down'
 					$("footer").addClass 'is-bottom'
 				else

@@ -18,7 +18,7 @@ $(function() {
 
 bottomWaypoint = function() {
   $("body").waypoint({
-    offset: -$(document).height(),
+    offset: -$(document).height() - 800,
     handler: function(direction) {
       if (direction === 'down') {
         return $("footer").addClass('is-bottom');
@@ -27,8 +27,8 @@ bottomWaypoint = function() {
       }
     }
   });
-  return $(".tools").waypoint({
-    offset: -$(".tools").scrollHeight(),
+  return $(".tools__scroll-container").waypoint({
+    offset: -$(".tools__scroll-container").height() + $(window).height(),
     context: '.tools',
     handler: function(direction) {
       if (direction === 'down') {

@@ -25,10 +25,8 @@ block content
 				br
 				div(style='height: 20px; overflow: hidden;')
 					.fb-like(data-href='http://webuildmen.org', data-layout='button', data-show-faces='false', data-share='true')
-		br
-		br
-	//- END HOME SECTION  
-	//- ABOUT US SECTION
+		//- TODO: fix social share
+
 	section#aboutus.about-us(data-type='background' data-speed='1.1')
 		.container
 			.section-header
@@ -242,8 +240,7 @@ block content
 					h3.all-caps Have an idea?
 					h5 If you have an idea for a toolkit, or would like to be a partner, let us know.
 					a.btn.btn-primary.custom-button.button-stroke-white(href='mailto:webuildmen@webuildmen.org') Submit
-	//- END WORKS SECTION 
-	//- COMMUNITY SECTION
+	
 	section#community.our-community(data-type='background' data-speed='1.1')
 		.container
 			.visible-xs(style='margin-top: 8%;')
@@ -262,10 +259,10 @@ block content
 	//- END OUR COMMUNITY SECTION 
 
 block footer
-	//- script
-	//- 	:coffeescript
-	//- 		head.load [
-	//- 			{
-	//- 				tagboard: "https://tagboard.com/public/js/embed.js"
-	//- 			}
-	//- 		], ->
+	script
+		:coffeescript
+			head.load [
+				{
+					tagboard: "https://tagboard.com/public/js/embed.js"
+				}
+			], ->
