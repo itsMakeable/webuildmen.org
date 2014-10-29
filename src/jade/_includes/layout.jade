@@ -1,73 +1,73 @@
 doctype html
 html(lang='en')
 head
-		meta(charset='UTF-8')
-		meta(name='description', content='WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow\'s men, today.')
-		meta(name='keywords', content='We Build Men Mentoring Makeable Esquire')
-		meta(name='author', content='Makeable')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		title We Build Men
+	meta(charset='UTF-8')
+	meta(name='description', content='WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow\'s men, today.')
+	meta(name='keywords', content='We Build Men Mentoring Makeable Esquire')
+	meta(name='author', content='Makeable')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	title We Build Men
+
+	style.
+		[data-aload] { background-image: none !important; }
+
+	script(src='//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
+	script(type="text/javascript").
+		function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
+
+	meta(property='og:locale', content='en_US')
+	meta(property='og:title', content='We Build Men')
+	meta(property='og:site_name', content='We Build Men')
+	meta(property='og:url', content='http://webuildmen.org')
+	meta(property='og:description', content='WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow\'s men, today.')
+	meta(property='og:site_name', content='We Build Men')
+	meta(property='og:image', content='http://webuildmen.org/images/logo.png')
+	//- FAV AND TOUCH ICONS
+	link(rel='apple-touch-icon', sizes='57x57', href='/assets/favicon/apple-touch-icon-57x57.png')
+	link(rel='apple-touch-icon', sizes='114x114', href='/assets/favicon/apple-touch-icon-114x114.png')
+	link(rel='apple-touch-icon', sizes='72x72', href='/assets/favicon/apple-touch-icon-72x72.png')
+	link(rel='apple-touch-icon', sizes='144x144', href='/assets/favicon/apple-touch-icon-144x144.png')
+	link(rel='apple-touch-icon', sizes='60x60', href='/assets/favicon/apple-touch-icon-60x60.png')
+	link(rel='apple-touch-icon', sizes='120x120', href='/assets/favicon/apple-touch-icon-120x120.png')
+	link(rel='apple-touch-icon', sizes='76x76', href='/assets/favicon/apple-touch-icon-76x76.png')
+	link(rel='apple-touch-icon', sizes='152x152', href='/assets/favicon/apple-touch-icon-152x152.png')
+	link(rel='icon', type='image/png', href='/assets/favicon/favicon-196x196.png', sizes='196x196')
+	link(rel='icon', type='image/png', href='/assets/favicon/favicon-160x160.png', sizes='160x160')
+	link(rel='icon', type='image/png', href='/assets/favicon/favicon-96x96.png', sizes='96x96')
+	link(rel='icon', type='image/png', href='/assets/favicon/favicon-16x16.png', sizes='16x16')
+	link(rel='icon', type='image/png', href='/assets/favicon/favicon-32x32.png', sizes='32x32')
+	meta(name='msapplication-TileColor', content='#000000')
+	meta(name='msapplication-TileImage', content='/assets/favicon/mstile-144x144.png')
+	//- STYLESHEETS
+	link(rel='stylesheet', href='/css/styles.css')
+	//- WEBFONT 
+	link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic%7CMontserrat:700,400%7CHomemade+Apple%7CLobster+Two:400,400italic%7Cfamily=Quattrocento:400,700', rel='stylesheet', type='text/css')
+
+	//if lt IE 9
+		script(src='/js/html5shiv.js')
+		script(src='/js/respond.min.js')
 	
-		style.
-			[data-aload] { background-image: none !important; }
-
-		script(src='//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
-		script(type="text/javascript").
-			function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
-
-		meta(property='og:locale', content='en_US')
-		meta(property='og:title', content='We Build Men')
-		meta(property='og:site_name', content='We Build Men')
-		meta(property='og:url', content='http://webuildmen.org')
-		meta(property='og:description', content='WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow\'s men, today.')
-		meta(property='og:site_name', content='We Build Men')
-		meta(property='og:image', content='http://webuildmen.org/images/logo.png')
-		//- FAV AND TOUCH ICONS
-		link(rel='apple-touch-icon', sizes='57x57', href='/assets/favicon/apple-touch-icon-57x57.png')
-		link(rel='apple-touch-icon', sizes='114x114', href='/assets/favicon/apple-touch-icon-114x114.png')
-		link(rel='apple-touch-icon', sizes='72x72', href='/assets/favicon/apple-touch-icon-72x72.png')
-		link(rel='apple-touch-icon', sizes='144x144', href='/assets/favicon/apple-touch-icon-144x144.png')
-		link(rel='apple-touch-icon', sizes='60x60', href='/assets/favicon/apple-touch-icon-60x60.png')
-		link(rel='apple-touch-icon', sizes='120x120', href='/assets/favicon/apple-touch-icon-120x120.png')
-		link(rel='apple-touch-icon', sizes='76x76', href='/assets/favicon/apple-touch-icon-76x76.png')
-		link(rel='apple-touch-icon', sizes='152x152', href='/assets/favicon/apple-touch-icon-152x152.png')
-		link(rel='icon', type='image/png', href='/assets/favicon/favicon-196x196.png', sizes='196x196')
-		link(rel='icon', type='image/png', href='/assets/favicon/favicon-160x160.png', sizes='160x160')
-		link(rel='icon', type='image/png', href='/assets/favicon/favicon-96x96.png', sizes='96x96')
-		link(rel='icon', type='image/png', href='/assets/favicon/favicon-16x16.png', sizes='16x16')
-		link(rel='icon', type='image/png', href='/assets/favicon/favicon-32x32.png', sizes='32x32')
-		meta(name='msapplication-TileColor', content='#000000')
-		meta(name='msapplication-TileImage', content='/assets/favicon/mstile-144x144.png')
-		//- STYLESHEETS
-		link(rel='stylesheet', href='/css/styles.css')
-		//- WEBFONT 
-		link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic%7CMontserrat:700,400%7CHomemade+Apple%7CLobster+Two:400,400italic%7CVollkorn:400italic,700italic,400,700', rel='stylesheet', type='text/css')
-
-		//if lt IE 9
-			script(src='/js/html5shiv.js')
-			script(src='/js/respond.min.js')
-
-		block head
+	block head
 
 
-	body
+	body#top
 		include symbols
 		include nav
-		//- script.
-			//- window.fbAsyncInit = function() {
-			//- FB.init({
-			//- appId      : '334599286714030',
-			//- xfbml      : true,
-			//- version    : 'v2.1'
-			//- });
-			//- };
-			//- (function(d, s, id){
-			//- var js, fjs = d.getElementsByTagName(s)[0];
-			//- if (d.getElementById(id)) {return;}
-			//- js = d.createElement(s); js.id = id;
-			//- js.src = "//connect.facebook.net/en_US/sdk.js";
-			//- fjs.parentNode.insertBefore(js, fjs);
-			//- }(document, 'script', 'facebook-jssdk'));
+		script.
+			window.fbAsyncInit = function() {
+			FB.init({
+			appId      : '334599286714030',
+			xfbml      : true,
+			version    : 'v2.1'
+			});
+			};
+			(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		//- PRE LOADER
 		.preloader
 			.status
@@ -76,39 +76,35 @@ head
 		
 		//- FOOTER
 		footer
-			//- TODO: include social icons
+			//- TODO: include social icons @done
+			//- TODO: asyc load project images
 			.container
-				.block
-					.col-lg-4
-						a(href='http://www.itsmakeable.com', target='_blank')
-							svg.footer-logo.is-left
-								use(xlink:href='#footer-makeable')
-						svg.footer-logo-divider(viewbox='0 0 61.4 165')
-							use(xlink:href='#divider') 
-						a(href='http://www.esquire.com', target='_blank')
-							svg.footer-logo.is-right
-								use(xlink:href='#footer-esquire') 
-						//- .col-lg-4
-						//- br
-						//- br
-						//- h4
-						//- 	a.text-white(href='https://twitter.com/webuildmen', target='_blank') Follow @webuildmen on Twitter
-						//- br
-						//- p © 2014
+				.col-lg-4.col-md-4.col-sm-12
+					.social-icons
+						a(href="https://www.facebook.com/webuildmen" alt='We Build Men Faceboo Profile')
+							svg
+								use(xlink:href='#icon-facebook--box')
+						a(href="https://twitter.com/webuildmen" alt='We Build Men Twitter Profile')
+							svg
+								use(xlink:href='#icon-twitter--box')
+				
+				.col-lg-4.col-md-4.col-sm-12
+					a(href='http://www.itsmakeable.com', target='_blank')
+						svg.footer-logo.is-left
+							use(xlink:href='#footer-makeable')
+					svg.footer-logo-divider(viewbox='0 0 61.4 165')
+						use(xlink:href='#divider') 
+					a(href='http://www.esquire.com', target='_blank')
+						svg.footer-logo.is-right
+							use(xlink:href='#footer-esquire')
+					h6.copyright © 2014
 
-		//- SCRIPTS 
-		//- JQUERY 
-		//- script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
-		//- script(src='/js/bootstrap.min.js')
-		//- script(src='/js/jquery.scrollTo.min.js')
-		//- script(src='/js/wow.min.js')
-		//- script(src='/js/jquery.nav.js')
-		//- <script src="js/jquery.knob.js"></script> 
-		//- script(src='/js/owl.carousel.min.js')
-		//- <script src="js/smoothscroll.js"></script> 
-		//- <script src="js/jquery.vegas.min.js"></script> 
-		//- script(src='/js/equalize.js')
-		//- script(src='/js/main.js')
+				.col-lg-4.col-md-4.col-sm-12
+					a(href="#top").back-to-top
+						h6 Back&nbsp;to&nbsp;Top
+						svg.icon-arrow
+							use(xlink:href='#icon-arrow.is-up')
+			
 		script
 			:coffeescript
 				head.load [
@@ -121,9 +117,9 @@ head
 					{
 						bootstrap: "/js/bootstrap.min.js"
 					}
-					# {
-					# 	scrollto: "/js/jquery.scrollTo.min.js"
-					# }
+					{
+						scrollto: "/js/jquery.scrollTo.min.js"
+					}
 					{
 						wow: "/js/wow.min.js"
 					}
@@ -149,12 +145,12 @@ head
 					window.onload = ->
 						aload()
 
-		script.
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-54579810-1', 'auto');
-			ga('send', 'pageview');
+		//- script.
+		//- 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		//- 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		//- 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		//- 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		//- 	ga('create', 'UA-54579810-1', 'auto');
+		//- 	ga('send', 'pageview');
 
 		block footer

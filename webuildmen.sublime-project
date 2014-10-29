@@ -9,6 +9,7 @@
 	],
 	"settings": {
 		"todoreview": {
+			"case_sensitive": true,
 			"exclude_folders": [
 				"*.git", 
 				"bower_components", 

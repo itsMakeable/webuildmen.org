@@ -1,4 +1,8 @@
-var bottomWaypoint, msViewportStyle;
+var bottomWaypoint, msViewportStyle, preCacheImages, scrollWaypoint, setHeights, wh, ww;
+
+ww = $(window).width();
+
+wh = $(window).height();
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   msViewportStyle = document.createElement("style");
@@ -6,92 +10,88 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector("head").appendChild(msViewportStyle);
 }
 
-$(function() {
-  var top;
-  $("#home .main-nav-list").onePageNav({
-    scrollThreshold: 0.2,
-    scrollOffset: 75,
-    changeHash: true
+setHeights = function() {
+  $('.js-set-height').css({
+    'min-height': $(window).height(),
+    'max-height': $(window).height()
   });
-  return top = $("#main-nav").offset().top - parseFloat($("#main-nav").css("margin-top").replace(/auto/, 0));
-});
+  return $('.js-set-min-height').css({
+    'min-height': $(window).height()
+  });
+};
+
+preCacheImages = function() {
+  var imgArray;
+  imgArray = $.makeArray($('[data-precache]'));
+  return $.each(imgArray, function() {
+    var img;
+    img = new Image();
+    return img.src = $(this).data('precache');
+  });
+};
 
 bottomWaypoint = function() {
-  $("body").waypoint({
-    offset: -$(document).height() - 800,
+  $('#index-page body').waypoint({
+    offset: 'bottom-in-view',
     handler: function(direction) {
       if (direction === 'down') {
-        return $("footer").addClass('is-bottom');
+        return $('footer').addClass('is-bottom');
       } else {
-        return $("footer").removeClass('is-bottom');
+        return $('footer').removeClass('is-bottom');
       }
     }
   });
-  return $(".tools__scroll-container").waypoint({
-    offset: -$(".tools__scroll-container").height() + $(window).height(),
+  return $('.tools__scroll-container').waypoint({
+    offset: -$('.tools__scroll-container').height() + $(window).height(),
     context: '.tools',
     handler: function(direction) {
       if (direction === 'down') {
-        return $("footer").addClass('is-bottom');
+        return $('footer').addClass('is-bottom');
       } else {
-        return $("footer").removeClass('is-bottom');
+        return $('footer').removeClass('is-bottom');
       }
     }
   });
 };
 
-$("a[href^=\"#\"]").on('click', function() {
-  $("html,body").animate({
-    scrollTop: $(this.hash).offset().top
-  }, 700);
-  return false;
+scrollWaypoint = function() {
+  return $('.works .container').waypoint({
+    offset: 0,
+    handler: function(direction) {
+      if (direction === 'down') {
+        return $('.works').css({
+          'background-attachment': 'fixed'
+        });
+      } else {
+        return $('.works').css({
+          'background-attachment': 'scroll'
+        });
+      }
+    }
+  });
+};
+
+$("a[href*=\"#\"]").on('click', function(e) {
+  if ($(this.hash).selector !== '#toolkits') {
+    $("html,body").animate({
+      scrollTop: $(this.hash).offset().top
+    }, 700);
+  } else {
+    $("html,body").animate({
+      scrollTop: $('[data-offset]').attr('data-offset')
+    }, 700);
+    return false;
+  }
   return e.preventDefault();
 });
 
 $(function($) {
   var $window;
-  $(".more").on("click", function(event) {
-    var content, href, portfolioList;
-    event.preventDefault();
-    href = $(this).attr("href");
-    portfolioList = $("#portfolio-list");
-    content = $("#loaded-content");
-    portfolioList.animate({
-      marginLeft: "-120%"
-    }, {
-      duration: 400,
-      queue: false
-    });
-    portfolioList.fadeOut(400);
-    setTimeout((function() {
-      $("#loader").show();
-    }), 400);
-    setTimeout((function() {
-      content.load(href, function() {
-        $("#loaded-content meta").remove();
-        $("#loader").hide();
-        content.fadeIn(600);
-        $("#back-button").fadeIn(600);
-        window.location.hash = href;
-      });
-    }), 800);
+  $(".js-like-button").on('click', function() {
+    $(".fb-like").find("a.connect_widget_like_button").click();
   });
-  $("#back-button").on("click", function(event) {
-    var content, portfolioList;
-    event.preventDefault();
-    portfolioList = $("#portfolio-list");
-    content = $("#loaded-content");
-    content.fadeOut(400);
-    $("#back-button").fadeOut(400);
-    return setTimeout((function() {
-      portfolioList.animate({
-        marginLeft: "0"
-      }, {
-        duration: 400,
-        queue: false
-      });
-      portfolioList.fadeIn(600);
-    }), 800);
+  $('.tools-icons').on('click', '.tools-icons__share', function() {
+    return $(this).parent().next().toggleClass('js-is-hidden');
   });
   $window = $(window);
   return $("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each(function() {
@@ -111,29 +111,45 @@ $(function($) {
 new WOW().init();
 
 $(function() {
-  $(".equal-height").equalize({
-    children: "h6"
+  $('.equal-height').equalize({
+    children: 'p'
   });
   return $('.project-box figure').on('mouseover', function() {
     return $(this).css({
-      'background': $(this).data('background')
+      'background-image': 'url(' + $(this).data("precache") + ')',
+      'background-size': 'cover',
+      'background-position': 'center center',
+      'background-repeat': 'no-repeat'
     });
   }).on('mouseleave', function() {
     return $(this).css({
-      'background': ''
+      'background-image': '',
+      'background-size': 'cover',
+      'background-position': 'center center',
+      'background-repeat': 'no-repeat'
     });
   });
 });
 
 $(window).on('load', function() {
   bottomWaypoint();
-  $('.js-set-height').css({
-    'min-height': $(window).height(),
-    'max-height': $(window).height()
-  });
-  $('.js-set-min-height').css({
-    'min-height': $(window).height()
-  });
+  preCacheImages();
+  setHeights();
+  if (ww > 1024 && !head.touch) {
+    scrollWaypoint();
+  }
   $(".status").fadeOut();
   return $(".preloader").delay(1000).fadeOut("slow");
+});
+
+$(window).on('resize', function() {
+  ww = $(window).width();
+  wh = $(window).height();
+  $(".equal-height").equalize({
+    children: "h6"
+  });
+  setHeights();
+  if (ww > 1024 && !head.touch) {
+    return scrollWaypoint();
+  }
 });
