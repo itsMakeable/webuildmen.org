@@ -1,4 +1,4 @@
-var bottomWaypoint, msViewportStyle, preCacheImages, scrollWaypoint, setHeights, wh, ww;
+var bottomWaypoint, msViewportStyle, preCacheImages, setHeights, wh, ww;
 
 ww = $(window).width();
 
@@ -54,41 +54,38 @@ bottomWaypoint = function() {
   });
 };
 
-scrollWaypoint = function() {
-  return $('.works .container').waypoint({
-    offset: 0,
-    handler: function(direction) {
-      if (direction === 'down') {
-        return $('.works').css({
-          'background-attachment': 'fixed'
-        });
-      } else {
-        return $('.works').css({
-          'background-attachment': 'scroll'
-        });
-      }
-    }
-  });
-};
+$("#index-page a[href*=\"#\"]").on('click', function(e) {
+  $("html,body").animate({
+    scrollTop: $(this.hash).offset().top
+  }, 700);
+  return e.preventDefault();
+});
 
-$("a[href*=\"#\"]").on('click', function(e) {
-  if ($(this.hash).selector !== '#toolkits') {
-    $("html,body").animate({
-      scrollTop: $(this.hash).offset().top
-    }, 700);
-  } else {
-    $("html,body").animate({
-      scrollTop: $('[data-offset]').attr('data-offset')
-    }, 700);
-    return false;
-  }
+$("#project-page a[href*=\"#\"]").on('click', function(e) {
+  $(".tools").animate({
+    scrollTop: $('.tools__scroll-container').offset().top
+  }, 700);
+  return false;
+  return e.preventDefault();
+});
+
+$(".tools__title .logo").on('click', function(e) {
+  $('.panel').addClass('is-highlighted');
+  $(".tools").animate({
+    scrollTop: $('.panel').offset().top
+  }, 700, function() {
+    return $('.panel').removeClass('is-highlighted');
+  });
+  return false;
   return e.preventDefault();
 });
 
 $(function($) {
   var $window;
-  $(".js-like-button").on('click', function() {
-    $(".fb-like").find("a.connect_widget_like_button").click();
+  $(document).on("click", function(event) {
+    if (!$(event.target).closest('.tools-icons__share').length) {
+      return $('.tools-icons__share').parent().next().addClass('js-is-hidden');
+    }
   });
   $('.tools-icons').on('click', '.tools-icons__share', function() {
     return $(this).parent().next().toggleClass('js-is-hidden');
@@ -135,9 +132,6 @@ $(window).on('load', function() {
   bottomWaypoint();
   preCacheImages();
   setHeights();
-  if (ww > 1024 && !head.touch) {
-    scrollWaypoint();
-  }
   $(".status").fadeOut();
   return $(".preloader").delay(1000).fadeOut("slow");
 });
@@ -148,8 +142,5 @@ $(window).on('resize', function() {
   $(".equal-height").equalize({
     children: "h6"
   });
-  setHeights();
-  if (ww > 1024 && !head.touch) {
-    return scrollWaypoint();
-  }
+  return setHeights();
 });

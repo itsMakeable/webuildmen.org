@@ -79,31 +79,35 @@ head
 			//- TODO: include social icons @done
 			//- TODO: asyc load project images
 			.container
-				.col-lg-4.col-md-4.col-sm-12
-					.social-icons
-						a(href="https://www.facebook.com/webuildmen" alt='We Build Men Faceboo Profile')
-							svg
-								use(xlink:href='#icon-facebook--box')
-						a(href="https://twitter.com/webuildmen" alt='We Build Men Twitter Profile')
-							svg
-								use(xlink:href='#icon-twitter--box')
-				
-				.col-lg-4.col-md-4.col-sm-12
-					a(href='http://www.itsmakeable.com', target='_blank')
-						svg.footer-logo.is-left
-							use(xlink:href='#footer-makeable')
-					svg.footer-logo-divider(viewbox='0 0 61.4 165')
-						use(xlink:href='#divider') 
-					a(href='http://www.esquire.com', target='_blank')
-						svg.footer-logo.is-right
-							use(xlink:href='#footer-esquire')
-					h6.copyright © 2014
+				.row
+					.col-lg-4.col-md-3.col-sm-12
+						.social-icons
+							a(href="https://www.facebook.com/webuildmen" alt='We Build Men Faceboo Profile')
+								svg
+									use(xlink:href='#icon-facebook--box')
+							a(href="https://twitter.com/webuildmen" alt='We Build Men Twitter Profile')
+								svg
+									use(xlink:href='#icon-twitter--box')
+					
+					.col-lg-4.col-md-6.col-sm-12
+						a(href='http://www.itsmakeable.com', target='_blank')
+							svg.footer-logo.is-left
+								use(xlink:href='#footer-makeable')
+						svg.footer-logo-divider(viewbox='0 0 61.4 165')
+							use(xlink:href='#divider') 
+						a(href='http://www.esquire.com', target='_blank')
+							svg.footer-logo.is-right
+								use(xlink:href='#footer-esquire')
+						
 
-				.col-lg-4.col-md-4.col-sm-12
-					a(href="#top").back-to-top
-						h6 Back&nbsp;to&nbsp;Top
-						svg.icon-arrow
-							use(xlink:href='#icon-arrow.is-up')
+					.col-lg-4.col-md-3.col-sm-12
+						a(href="#").back-to-top
+							h6 Back&nbsp;to&nbsp;Top
+								span
+									svg.icon-arrow.is-up
+										use(xlink:href='#icon-arrow')
+				.row
+					h6.copyright © 2014
 			
 		script
 			:coffeescript
