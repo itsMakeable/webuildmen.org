@@ -1,7 +1,11 @@
 extends ../../_includes/layout
 block head
-	meta(property='og:title', content='Build a Meal Like a Chef')
+	title We Build Men: Build a Meal Like a Chef
+	meta(property='og:title', content='We Build Men: Build a Meal Like a Chef')
 	meta(property='og:description', content='Shop, prep, and dish it up all in an evening')
+	meta(property='og:url', content='http://staging.webuildmen.org/toolkits/popular-mechanics/cool-a-meal-like-a-chef.html')
+	meta(property='og:image', content='http://staging.webuildmen.org/toolkits/chef-brian-lewis/screenshot.png')
+
 block content
 	section.single-project.js-set-height(style='padding-top:150px;background: url("/images/backgrounds/bg_chef-brian-lewis.jpg") no-repeat; background-size: auto 100%; background-position: 50% left;')
 		.container
@@ -15,25 +19,20 @@ block content
 							| Build a Meal Like a Chef
 						.tools-groups
 							.tools-group.tools-group__share
-								//- span
-								//- 	svg.tools-icon.tools-icon__share(style="width: 20px; height: 20px;" title='Share')
-								//- 		use(xlink:href='#icon-share')
+								//- span: svg.tools-icon.tools-icon__share(style="width: 20px; height: 20px;" title='Share'): use(xlink:href='#icon-share')
 								span.tools-text Share
-							span.tools-groups__break |
-							.tools-group
-								//- span
-								//- 	svg.tools-icon.tools-icon__download(style="width: 20px; height: 20px;" title='Download')
-								//- 		use(xlink:href='#icon-download')
-								span.tools-text Download
-							//- .cover.cover--right
-							//- 	span
+							//- span.tools-groups__break |
+							//- .tools-group
+							//- 	//- span: svg.tools-icon.tools-icon__download(style="width: 20px; height: 20px;" title='Download'): use(xlink:href='#icon-download')
+							//- 	span.tools-text Download
+
 						.tools__actions.js-is-hidden
 							span Share this
 							.social-icons.is-small
 								i.st_facebook_custom(displayText='Facebook')
 									svg
 										use(xlink:href='#icon-facebook')
-								i.st_twitter_custom(displayText='Twitter' st_title='We Build Men — Build a Go-Kart like a Champ'  st_url='http://webuildmen.org/' st_via='')
+								i.st_twitter_custom(displayText='Twitter' st_title='We Build Men — Build a Meal Like a Chef'  st_url='http://webuildmen.org/' st_via='')
 									svg
 										use(xlink:href='#icon-twitter')
 				.col-lg-6.col-md-7.column

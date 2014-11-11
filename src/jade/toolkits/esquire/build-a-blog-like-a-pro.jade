@@ -1,7 +1,12 @@
 extends ../../_includes/layout
+
 block head
-	meta(property='og:title', content='Build a Blog Like a Pro')
+	title We Build Men: Build a Blog Like a Pro
+	meta(property='og:title', content='We Build Men: Build a Blog Like a Pro')
 	meta(property='og:description', content='Tools, hacks and tips that’ll get you live in an aftertoon')
+	meta(property='og:url', content='http://staging.webuildmen.org/toolkits/popular-mechanics/build-a-blog-like-a-pro.html')
+	meta(property='og:image', content='http://staging.webuildmen.org/toolkits/esquire/screenshot.png')
+
 block content
 	section.single-project.js-set-height(style='padding-top:150px;background: url("/images/backgrounds/bg_esquire.jpg") no-repeat; background-size: auto 100%; background-position: top left;')
 		.container
@@ -14,27 +19,23 @@ block content
 								use(xlink:href='#logo-esquire')
 						div
 							| Build a Blog Like a Pro
+
 						.tools-groups
 							.tools-group.tools-group__share
-								//- span
-								//- 	svg.tools-icon.tools-icon__share(style="width: 20px; height: 20px;" title='Share')
-								//- 		use(xlink:href='#icon-share')
+								//- span: svg.tools-icon.tools-icon__share(style="width: 20px; height: 20px;" title='Share'): use(xlink:href='#icon-share')
 								span.tools-text Share
-							span.tools-groups__break |
-							.tools-group
-								//- span
-								//- 	svg.tools-icon.tools-icon__download(style="width: 20px; height: 20px;" title='Download')
-								//- 		use(xlink:href='#icon-download')
-								span.tools-text Download
-							//- .cover.cover--right
-							//- 	span
+							//- span.tools-groups__break |
+							//- .tools-group
+							//- 	//- span: svg.tools-icon.tools-icon__download(style="width: 20px; height: 20px;" title='Download'): use(xlink:href='#icon-download')
+							//- 	span.tools-text Download
+
 						.tools__actions.js-is-hidden
 							span Share this
 							.social-icons.is-small
 								i.st_facebook_custom(displayText='Facebook')
 									svg
 										use(xlink:href='#icon-facebook')
-								i.st_twitter_custom(displayText='Twitter' st_title='We Build Men — Build a Go-Kart like a Champ'  st_url='http://webuildmen.org/' st_via='')
+								i.st_twitter_custom(displayText='Twitter' st_title='We Build Men — Build a Blog Like a Pro'  st_url='http://webuildmen.org/' st_via='')
 									svg
 										use(xlink:href='#icon-twitter')
 				//- COLUMN 2 - BRIEF ABOUT THE COMPANY
@@ -99,7 +100,7 @@ block content
 											
 								p Esquire is a men's magazine, published in the U.S. by the Hearst Corporation. Founded in 1932, it flourished during the Great Depression under the guidance of founders Arnold Gingrich, David A. Smart and Henry L. Jackson.
 								p
-									a.button--silent(href="#" target='_blank') 
+									a.button--silent(href="http://esquire.com" target='_blank' alt='Esquire site' ) 
 										| Go to Site
 										span
 											svg
