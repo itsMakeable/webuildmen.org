@@ -7,262 +7,261 @@ block head
 	meta(property='og:image', content='http://webuildmen.org/images/logo.png')
 block content
 	//- HOME SECTION
-	#full-page-container
-		header#home.header.js-set-min-height
-			.container.container-contents
-				.visible-xs(style='margin-top: 20%;')
-				.visible-sm(style='margin-top: 5%;')
-				.row
-					.col-lg-6.col-md-6.col-md-push-3.text.center
-						//- svg.logo(viewbox='64.9 93.3 991.3 926')
-						//- 	use(xlink:href='#logo') 
-						img.section-header__img(src="images/logo.svg", alt="")
+	header#home.header.js-set-min-height
+		.container.container-contents
+			.visible-xs(style='margin-top: 20%;')
+			.visible-sm(style='margin-top: 5%;')
 			.row
-				.col-lg-10.col-md-10.col-lg-push-1.col-md-push-1.text-center.second-nav
-					h3.text-white.all-caps.text-shadow
-						| The 
-						a.scrollto(href='/#knowhow') Know-How
-						| , 
-						a.scrollto(href='/#toolkits') Tools 
-						| &amp; 
-						a.scrollto(href='/#community') Community 
-						| to help build tomorrow’s men,&nbsp;today.
+				.col-lg-6.col-md-6.col-md-push-3.text.center
+					//- svg.logo(viewbox='64.9 93.3 991.3 926')
+					//- 	use(xlink:href='#logo') 
+					img.section-header__img(src="images/logo.svg", alt="")
+		.row
+			.col-lg-10.col-md-10.col-lg-push-1.col-md-push-1.text-center.second-nav
+				h3.text-white.all-caps.text-shadow
+					| The 
+					a.scrollto(href='/#knowhow') Know-How
+					| , 
+					a.scrollto(href='/#toolkits') Tools 
+					| &amp; 
+					a.scrollto(href='/#community') Community 
+					| to help build tomorrow’s men,&nbsp;today.
 
 
-				div(style='height: 40px; overflow: hidden; position: absolute; bottom: 5%; margin: auto; left: 0; right: 0;')
-					.fb-like(data-href='http://webuildmen.org', data-layout='button', data-show-faces='false', data-share='true')
+			div(style='height: 40px; overflow: hidden; position: absolute; bottom: 5%; margin: auto; left: 0; right: 0;')
+				.fb-like(data-href='http://webuildmen.org', data-layout='button', data-show-faces='false', data-share='true')
 
 
 
-		section#aboutus.about-us(data-type='background' data-speed='1.1')
-			.container
-				.section-header
-					.visible-xs.visible-sm.visible-md.visible-lg(style='margin-top: 8%;')
-					svg.section-header__img(viewbox='3.3 0.1 664.6 99.3')
-						use(xlink:href='#about-us')
+	section#aboutus.about-us(data-type='background' data-speed='1.1')
+		.container
+			.section-header
+				.visible-xs.visible-sm.visible-md.visible-lg(style='margin-top: 8%;')
+				svg.section-header__img(viewbox='3.3 0.1 664.6 99.3')
+					use(xlink:href='#about-us')
 
-				.row
-					.col-lg-10.col-md-10.col-lg-push-1.col-md-push-1.column.text-left
-						br
-						h3
-							| WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow’s men,&nbsp;today.
-						br
-						h5
-							| We’ve set out to build a national movement that encourages men to join us to help change a young man’s life, starting with this community platform that’s custom-built for today’s man—to help him take on the challenges of contemporary mentorship in a bite-sized, confident and exciting way. The potential and power of our work lies in the participation of men like you and the exciting group of partners we’ve engaged, spearheaded by Esquire, to provide us with what we all need in order to man up and get this job&nbsp;done—together.
-						br
-						hr
-						br
-						h3
-							| Why? Because America’s young men need role models and mentors today more than ever before. If you are a young man in America in the twenty first century, you&nbsp;are:
-						br
-						h5
-							ul.bulleted
-								li
-									| Three times as likely as a young woman to be diagnosed with an attention-deficit or learning disorder and twice as likely to be on medication for&nbsp;it.
-								li More likely to be held back in school. More likely to drop out of&nbsp;school.
-								li Less likely to go to college. Less likely to graduate from&nbsp;college.
-								li
-									| Twice as likely to abuse alcohol, and until you are twenty-four, five times as likely to kill yourself.
-								li Eleven times as likely to go to&nbsp;prison.
-						br
-						h5
-							| In spite of this, mentoring organizations struggling to find men to serve as mentors even as evidence mounts that the presence of a father or a „substitute father” (teacher, coach, mentor) is the single greatest determinant to a young man’s future&nbsp;success.
-				.row.centered
-					.col-lg-4.col-md-5.col-lg-push-2.col-md-push-1.col-sm-12.column.button-group
-						br
-						.wow.fadeInUp.animated(data-wow-offset='50', data-wow-duration='1.0s', data-wow-delay='0.15s')
-							a.btn.btn-primary.custom-button.button-stroke-white.btn-block.white-btn(href='http://mentoring.esquire.com', target='_blank')
-								| Read More
-							p.italic.text-center 50 Great Men &amp; Their Mentors at&nbsp;Esquire.com
-					.col-lg-4.col-md-5.col-lg-push-2.col-md-push-1.col-sm-12.column.button-group
-						br
-						.wow.fadeInUp.animated(data-wow-offset='50', data-wow-duration='1.0s', data-wow-delay='0.15s')
-							a.btn.btn-primary.custom-button.button-stroke-white.btn-block.white-btn(href='https://mentoring.esquire.com/sp/mentor_search.html', target='_blank')
-								| Get Involved
-							p.italic.text-center Find Mentorship Organizations Near You at&nbsp;Esquire.com
-		//- END ABOUT US SECTION 
-		//- KNOWHOW SECTION
-		section#knowhow.knowhow
-			.container
-				.section-header
-					.visible-xs(style='margin-top: 8%;')
-					.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
-					svg.section-header__img(viewbox='0 0 788.2 155.5')
-						use(xlink:href='#know-how')
-					div(style='margin-top: 10px;')
-						svg.star--small(viewbox='0 0 50.4 48')
-							use(xlink:href='#icon-star')
-						svg.star--large(width='30' viewbox='0 0 50.4 48')
-							use(xlink:href='#icon-star') 
-						svg.star--small(viewbox='0 0 50.4 48')
-							use(xlink:href='#icon-star') 
+			.row
+				.col-lg-10.col-md-10.col-lg-push-1.col-md-push-1.column.text-left
 					br
-					h4
-						| Been to Google and you've found thousands of tips, lists, articles, experts and a whole lot more on mentoring? We have. And it's overwhelming. So, we decided to put together 9 bite-sized bits of know-how—from reliable sources. Start&nbsp;here.
+					h3
+						| WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow’s men,&nbsp;today.
 					br
+					h5
+						| We’ve set out to build a national movement that encourages men to join us to help change a young man’s life, starting with this community platform that’s custom-built for today’s man—to help him take on the challenges of contemporary mentorship in a bite-sized, confident and exciting way. The potential and power of our work lies in the participation of men like you and the exciting group of partners we’ve engaged, spearheaded by Esquire, to provide us with what we all need in order to man up and get this job&nbsp;done—together.
 					br
-				//- 4 knowhow BOXES 
-				.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.yellow.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/1.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-1') 
-						h5.yellow-border-bottom Provide Structure
-						p.text-left
-							| Boys need structure. In partnership with your mentee, develop a schedule, routine or rituals for the length of your formal relationship. Take on his ideas and work as a team to keep on&nbsp;track.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/2.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-2') 
-						h5.green-border-bottom Pinpoint a Passion
-						p.text-left
-							| Help your mentee cultivate a passion. Most young men need some kind of anchor-a sport, music, or hobby-that they can turn to when life gets stressful, so in your early interactions, try to figure out what that passion is (or could be), and pursue&nbsp;it.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.blue.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/3.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-3') 
-						h5.blue-border-bottom Have fun, Be Active
-						p.text-left
-							| Play games, go bowling, go to the movies, etc. Give the teen you're mentoring a voice and choice in deciding on activities–it demonstrates you trust them, and it helps build their skills and confidence.  And, when possible and appropriate, try and do something active. Movement stimulates the brain to process emotions, and even something as low-key as walking can facilitate&nbsp;conversation.
-				.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.yellow.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/4.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-4') 
-						h5.yellow-border-bottom Ask Questions
-						p.text-left
-							| Asking your mentee open questions will help you as a mentor to identify their real needs, values and passions. It's also a great way to get your mentee to think through situations themselves and draw out the consequences of the various choices or courses of action they can take. During these conversations, you can share your wisdom, without making decisions for your mentee. That's their&nbsp;job.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.red.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/5.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-5') 
-						h5.red-border-bottom Listen
-						p.text-left
-							| By just listening—not criticizing or judging—you'll develop trust. Respect the trust the young man places in you–show them that you understand and are committed to the relationship. Mentees benefit greatly from the opportunity of having a good mentor listen to them. Allow them to explore their thoughts and ideas openly with you. This will often help them unravel their thinking and gain insights about a situation as they share their concerns with&nbsp;you.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/6.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-6') 
-						h5.green-border-bottom Provide Helpful Feedback
-						p.text-left
-							| Not all feedback is helpful. A good mentor knows this and will deliver feedback in a way that will help their mentee gain insight to further develop specific qualities or skills. For example, a good mentor will always ask for permission to give feedback before doing so. Giving unwelcome feedback can be detrimental to any mentoring relationship. Instead, explain what you'd like to talk about first and highlight the benefits of doing&nbsp;this.
-				.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/7.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-7') 
-						h5.green-border-bottom Offer Advice, But Only When Your Mentee Asks For&nbsp;It
-						p.text-left
-							| Being a sounding board is always more empowering for a mentee than advising them what to do. It helps them work through the issue and come to their own conclusions. By doing so, you ultimately help them to learn to think through issues themselves and trust their own judgement, both valuable life&nbsp;skills.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.red.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/8.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-8') 
-						h5.red-border-bottom Remember You Are a Mentor, Not a Best&nbsp;Friend
-						p.text-left
-							| Good mentors are respected by their mentees. A mentee can learn a lot from his mentor simply by watching how his mentor behaves in any particular situation, so it's important that you're acting like your best self around them. No cursing, no negativity, no&nbsp;second-guessing.
-					.col-lg-4.col-md-8.col-sm-8.knowhow-box.blue.equal-height
-						.service-icon(style='font-size: 76px;')
-							//- img(src='images/numbers/9.svg', alt='', height='70px')
-							svg(width='100%' height='70px')
-								use(xlink:href='#number-9') 
-						h5.blue-border-bottom Remember YOU Are Responsible For Building the&nbsp;Relationship
-						p.text-left
-							| Take responsibility for making and maintaining contact and don't expect too much feedback from the teenager. (He is, remember, a&nbsp;teenager.)
-				//- <h6 class="btn btn-primary custom-button light-bg button-stroke-dark">Download PDF</h6>
-											
-		//- END KNOWHOW SECTION 
-		//- TOOLKITS SECTION
-		section#toolkits.js-set-min-height(data-offset='')
-			.works
-				.container
-					.visible-xs(style='margin-top: 8%;')
-					.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
-					.section-header
-						svg.section-header__img(viewbox='0 0 116.6 112')
-							use(xlink:href='#icon-hammer-screwdriver') 
-						br
-						svg(width='50%' viewbox='0 0 903.5 100')
-							use(xlink:href='#toolkits') 
-						br
-						br
-						h4
-							| Ready to go but don't know what, when or how? We've got you covered with a few toolkits (complete with tips and hacks) from Popular Mechanics, Esquire and Chef Brian Lewis to get you out there—for a full day, an afternoon or an evening's worth of&nbsp;building.
-					.project__scoll-container
-						.row.projects
-							#loader
-								.loader-icon
-							#portfolio-list.col-md-12
-								ul.cbp-rfgrid
-									//- PROJECT 
-									li
-										a.project-box(href='/toolkits/popular-mechanics/build-a-go-kart-like-a-champ.html')
-											figure(style="background: url() no-repeat;" data-precache="toolkits/popular-mechanics/thumbnail.jpg")
-												.project-info
-													figurecaption.project-details
-														h5.white-text.red-border-bottom 
-															svg.project-details__logo(style="height: 22px;")
-																use(xlink:href='#logo-popular-mechanics') 
-															//- Popular Mechanics
-														.details.white-text
-															| Build a Go-Kart like a Champ
-									//- PROJECT 
-									li
-										a.project-box(href='/toolkits/esquire/build-a-blog-like-a-pro.html')
-											figure(style="background: url() no-repeat;" data-precache="/toolkits/esquire/thumbnail.jpg")
-												.project-info
-													figurecaption.project-details
-														h5.white-text.red-border-bottom 
-															svg.project-details__logo(style="height: 30px;")
-																use(xlink:href='#logo-esquire') 
-															//- Esquire
-														.details.white-text
-															| Build a Blog Like a Pro
-									//- PROJECT 
-									li
-										a.project-box(href='/toolkits/chef-brian-lewis/cook-a-meal-like-a-chef.html')
-											figure(style="background: url() no-repeat;" data-precache="toolkits/chef-brian-lewis/thumbnail.jpg")
-												.project-info
-													figurecaption.project-details
-														h5.white-text.red-border-bottom 
-															svg.project-details__logo(style="height: 60px; margin-top: -24px;")
-																use(xlink:href='#logo-elm') 
-															//- Chef Brian Lewis
-														.details.white-text
-															| Build a Meal Like a Chef
-				//- END PROJECTS
-				.row(style='margin-top: 60px;')
-					.col-lg-12.col-sm-12
-						//- hr
-						br
-						br
-						h3.all-caps Have an idea?
-						h5 If you have an idea for a toolkit, or would like to be a partner, let us know.
-						a.btn.btn-primary.custom-button.button-stroke-white(href='mailto:webuildmen@webuildmen.org') Submit
-		
-		section#community.our-community(data-type='background' data-speed='1.1')
+					hr
+					br
+					h3
+						| Why? Because America’s young men need role models and mentors today more than ever before. If you are a young man in America in the twenty first century, you&nbsp;are:
+					br
+					h5
+						ul.bulleted
+							li
+								| Three times as likely as a young woman to be diagnosed with an attention-deficit or learning disorder and twice as likely to be on medication for&nbsp;it.
+							li More likely to be held back in school. More likely to drop out of&nbsp;school.
+							li Less likely to go to college. Less likely to graduate from&nbsp;college.
+							li
+								| Twice as likely to abuse alcohol, and until you are twenty-four, five times as likely to kill yourself.
+							li Eleven times as likely to go to&nbsp;prison.
+					br
+					h5
+						| In spite of this, mentoring organizations struggling to find men to serve as mentors even as evidence mounts that the presence of a father or a „substitute father” (teacher, coach, mentor) is the single greatest determinant to a young man’s future&nbsp;success.
+			.row.centered
+				.col-lg-4.col-md-5.col-lg-push-2.col-md-push-1.col-sm-12.column.button-group
+					br
+					.wow.fadeInUp.animated(data-wow-offset='50', data-wow-duration='1.0s', data-wow-delay='0.15s')
+						a.btn.btn-primary.custom-button.button-stroke-white.btn-block.white-btn(href='http://mentoring.esquire.com', target='_blank')
+							| Read More
+						p.italic.text-center 50 Great Men &amp; Their Mentors at&nbsp;Esquire.com
+				.col-lg-4.col-md-5.col-lg-push-2.col-md-push-1.col-sm-12.column.button-group
+					br
+					.wow.fadeInUp.animated(data-wow-offset='50', data-wow-duration='1.0s', data-wow-delay='0.15s')
+						a.btn.btn-primary.custom-button.button-stroke-white.btn-block.white-btn(href='https://mentoring.esquire.com/sp/mentor_search.html', target='_blank')
+							| Get Involved
+						p.italic.text-center Find Mentorship Organizations Near You at&nbsp;Esquire.com
+	//- END ABOUT US SECTION 
+	//- KNOWHOW SECTION
+	section#knowhow.knowhow
+		.container
+			.section-header
+				.visible-xs(style='margin-top: 8%;')
+				.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
+				svg.section-header__img(viewbox='0 0 788.2 155.5')
+					use(xlink:href='#know-how')
+				div(style='margin-top: 10px;')
+					svg.star--small(viewbox='0 0 50.4 48')
+						use(xlink:href='#icon-star')
+					svg.star--large(width='30' viewbox='0 0 50.4 48')
+						use(xlink:href='#icon-star') 
+					svg.star--small(viewbox='0 0 50.4 48')
+						use(xlink:href='#icon-star') 
+				br
+				h4
+					| Been to Google and you've found thousands of tips, lists, articles, experts and a whole lot more on mentoring? We have. And it's overwhelming. So, we decided to put together 9 bite-sized bits of know-how—from reliable sources. Start&nbsp;here.
+				br
+				br
+			//- 4 knowhow BOXES 
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.yellow.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/1.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-1') 
+					h5.yellow-border-bottom Provide Structure
+					p.text-left
+						| Boys need structure. In partnership with your mentee, develop a schedule, routine or rituals for the length of your formal relationship. Take on his ideas and work as a team to keep on&nbsp;track.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/2.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-2') 
+					h5.green-border-bottom Pinpoint a Passion
+					p.text-left
+						| Help your mentee cultivate a passion. Most young men need some kind of anchor-a sport, music, or hobby-that they can turn to when life gets stressful, so in your early interactions, try to figure out what that passion is (or could be), and pursue&nbsp;it.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.blue.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/3.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-3') 
+					h5.blue-border-bottom Have fun, Be Active
+					p.text-left
+						| Play games, go bowling, go to the movies, etc. Give the teen you're mentoring a voice and choice in deciding on activities–it demonstrates you trust them, and it helps build their skills and confidence.  And, when possible and appropriate, try and do something active. Movement stimulates the brain to process emotions, and even something as low-key as walking can facilitate&nbsp;conversation.
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.yellow.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/4.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-4') 
+					h5.yellow-border-bottom Ask Questions
+					p.text-left
+						| Asking your mentee open questions will help you as a mentor to identify their real needs, values and passions. It's also a great way to get your mentee to think through situations themselves and draw out the consequences of the various choices or courses of action they can take. During these conversations, you can share your wisdom, without making decisions for your mentee. That's their&nbsp;job.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.red.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/5.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-5') 
+					h5.red-border-bottom Listen
+					p.text-left
+						| By just listening—not criticizing or judging—you'll develop trust. Respect the trust the young man places in you–show them that you understand and are committed to the relationship. Mentees benefit greatly from the opportunity of having a good mentor listen to them. Allow them to explore their thoughts and ideas openly with you. This will often help them unravel their thinking and gain insights about a situation as they share their concerns with&nbsp;you.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/6.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-6') 
+					h5.green-border-bottom Provide Helpful Feedback
+					p.text-left
+						| Not all feedback is helpful. A good mentor knows this and will deliver feedback in a way that will help their mentee gain insight to further develop specific qualities or skills. For example, a good mentor will always ask for permission to give feedback before doing so. Giving unwelcome feedback can be detrimental to any mentoring relationship. Instead, explain what you'd like to talk about first and highlight the benefits of doing&nbsp;this.
+			.row.wow.fadeInUp.animated(data-wow-offset='260', data-wow-duration='1.5s', data-wow-delay='0.3s')
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.green.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/7.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-7') 
+					h5.green-border-bottom Offer Advice, But Only When Your Mentee Asks For&nbsp;It
+					p.text-left
+						| Being a sounding board is always more empowering for a mentee than advising them what to do. It helps them work through the issue and come to their own conclusions. By doing so, you ultimately help them to learn to think through issues themselves and trust their own judgement, both valuable life&nbsp;skills.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.red.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/8.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-8') 
+					h5.red-border-bottom Remember You Are a Mentor, Not a Best&nbsp;Friend
+					p.text-left
+						| Good mentors are respected by their mentees. A mentee can learn a lot from his mentor simply by watching how his mentor behaves in any particular situation, so it's important that you're acting like your best self around them. No cursing, no negativity, no&nbsp;second-guessing.
+				.col-lg-4.col-md-8.col-sm-8.knowhow-box.blue.equal-height
+					.service-icon(style='font-size: 76px;')
+						//- img(src='images/numbers/9.svg', alt='', height='70px')
+						svg(width='100%' height='70px')
+							use(xlink:href='#number-9') 
+					h5.blue-border-bottom Remember YOU Are Responsible For Building the&nbsp;Relationship
+					p.text-left
+						| Take responsibility for making and maintaining contact and don't expect too much feedback from the teenager. (He is, remember, a&nbsp;teenager.)
+			//- <h6 class="btn btn-primary custom-button light-bg button-stroke-dark">Download PDF</h6>
+										
+	//- END KNOWHOW SECTION 
+	//- TOOLKITS SECTION
+	section#toolkits.js-set-min-height(data-offset='')
+		.works
 			.container
 				.visible-xs(style='margin-top: 8%;')
 				.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
 				.section-header
-					//- svg(width='50%' viewbox='0 0 668.4 177.9')
-					//- 	use(xlink:href='#community')
-					img.section-header__img(src="images/community.svg", alt="")
+					svg.section-header__img(viewbox='0 0 116.6 112')
+						use(xlink:href='#icon-hammer-screwdriver') 
+					br
+					svg(width='50%' viewbox='0 0 903.5 100')
+						use(xlink:href='#toolkits') 
 					br
 					br
-					h4.text-white
-						| Looking for likeminded men who can share some useful perspective on what it takes to get this important job done? Have some knowledge and experience of your own to share? We thought we'd make it easy. Wherever you share, just use #WeBuildMen and you're in. We'll collect and connect it all&nbsp;here.
-				#tagboard-embed
-				script.
-					var tagboardOptions = {tagboard:"webuildmen/188889", darkMode: true};
+					h4
+						| Ready to go but don't know what, when or how? We've got you covered with a few toolkits (complete with tips and hacks) from Popular Mechanics, Esquire and Chef Brian Lewis to get you out there—for a full day, an afternoon or an evening's worth of&nbsp;building.
+				.project__scoll-container
+					.row.projects
+						#loader
+							.loader-icon
+						#portfolio-list.col-md-12
+							ul.cbp-rfgrid
+								//- PROJECT 
+								li
+									a.project-box(href='/toolkits/popular-mechanics/build-a-go-kart-like-a-champ.html')
+										figure(style="background: url() no-repeat;" data-precache="toolkits/popular-mechanics/thumbnail.jpg")
+											.project-info
+												figurecaption.project-details
+													h5.white-text.red-border-bottom 
+														svg.project-details__logo(style="height: 22px;")
+															use(xlink:href='#logo-popular-mechanics') 
+														//- Popular Mechanics
+													.details.white-text
+														| Build a Go-Kart like a Champ
+								//- PROJECT 
+								li
+									a.project-box(href='/toolkits/esquire/build-a-blog-like-a-pro.html')
+										figure(style="background: url() no-repeat;" data-precache="/toolkits/esquire/thumbnail.jpg")
+											.project-info
+												figurecaption.project-details
+													h5.white-text.red-border-bottom 
+														svg.project-details__logo(style="height: 30px;")
+															use(xlink:href='#logo-esquire') 
+														//- Esquire
+													.details.white-text
+														| Build a Blog Like a Pro
+								//- PROJECT 
+								li
+									a.project-box(href='/toolkits/chef-brian-lewis/cook-a-meal-like-a-chef.html')
+										figure(style="background: url() no-repeat;" data-precache="toolkits/chef-brian-lewis/thumbnail.jpg")
+											.project-info
+												figurecaption.project-details
+													h5.white-text.red-border-bottom 
+														svg.project-details__logo(style="height: 60px; margin-top: -24px;")
+															use(xlink:href='#logo-elm') 
+														//- Chef Brian Lewis
+													.details.white-text
+														| Build a Meal Like a Chef
+			//- END PROJECTS
+			.row(style='margin-top: 60px;')
+				.col-lg-12.col-sm-12
+					//- hr
+					br
+					br
+					h3.all-caps Have an idea?
+					h5 If you have an idea for a toolkit, or would like to be a partner, let us know.
+					a.btn.btn-primary.custom-button.button-stroke-white(href='mailto:webuildmen@webuildmen.org') Submit
+	
+	section#community.our-community(data-type='background' data-speed='1.1')
+		.container
+			.visible-xs(style='margin-top: 8%;')
+			.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
+			.section-header
+				//- svg(width='50%' viewbox='0 0 668.4 177.9')
+				//- 	use(xlink:href='#community')
+				img.section-header__img(src="images/community.svg", alt="")
+				br
+				br
+				h4.text-white
+					| Looking for likeminded men who can share some useful perspective on what it takes to get this important job done? Have some knowledge and experience of your own to share? We thought we'd make it easy. Wherever you share, just use #WeBuildMen and you're in. We'll collect and connect it all&nbsp;here.
+			#tagboard-embed
+			script.
+				var tagboardOptions = {tagboard:"webuildmen/188889", darkMode: true};
 
 
 block footer

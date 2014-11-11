@@ -8470,6 +8470,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   padding-bottom: 100px;
   background: #282525 url("../images/stardust.png") repeat top left;
   background-size: 399px 399px; }
+  .about-us li {
+    font-size: 22px; }
 
 .retina .about-us {
   background: #282525 url("../images/stardust_@2X.png") repeat top left;

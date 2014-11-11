@@ -143,12 +143,11 @@ $(function() {
 $(window).on('load', function() {
   preCacheImages();
   setHeights();
-  if (window.location.pathname === 'http://staging.webuildmen.org/#toolkits') {
+  if (window.location.hash === '#toolkits') {
+    console.log($('.works').offset().top);
     $('html,body').animate({
-      scrollTop: $('[data-offset]').attr('data-offset')
-    }, 900, 'easeOutQuad');
-    return false;
-    e.preventDefault();
+      scrollTop: $('.works').offset().top
+    }, 0, 'easeOutQuad');
   }
   if (!head.mobile) {
     bottomWaypoint();
