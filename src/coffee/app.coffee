@@ -65,13 +65,15 @@ $('#index-page a[href*=\"#\"]').on 'click', (e) ->
 		, 900, 'easeOutQuad'
 		return false
 		e.preventDefault()
+
 $('#project-page .back-to-top').on 'click', (e) ->
-	console.log 'this'
 	$('.tools').animate
 			scrollTop: $('body').offset().top
 	, 900, 'easeOutQuad'
 	return false
 	e.preventDefault()
+
+
 
 $('.tools__title .logo').on 'click', (e) ->
 	$('.panel').addClass('is-highlighted')
@@ -137,7 +139,14 @@ $ ->
 $(window).on 'load', ->
 	preCacheImages()
 	setHeights()
-	
+
+	if window.location.pathname = 'http://staging.webuildmen.org/#knowhow'
+		$('html,body').animate
+			scrollTop: $('[data-offset]').attr('data-offset')
+		, 900, 'easeOutQuad'
+		return false
+		e.preventDefault()
+
 	if !head.mobile
 		bottomWaypoint()
 

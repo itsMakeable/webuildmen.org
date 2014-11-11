@@ -74,7 +74,6 @@ $('#index-page a[href*=\"#\"]').on('click', function(e) {
 });
 
 $('#project-page .back-to-top').on('click', function(e) {
-  console.log('this');
   $('.tools').animate({
     scrollTop: $('body').offset().top
   }, 900, 'easeOutQuad');
@@ -144,6 +143,13 @@ $(function() {
 $(window).on('load', function() {
   preCacheImages();
   setHeights();
+  if (window.location.pathname = 'http://staging.webuildmen.org/#knowhow') {
+    $('html,body').animate({
+      scrollTop: $('[data-offset]').attr('data-offset')
+    }, 900, 'easeOutQuad');
+    return false;
+    e.preventDefault();
+  }
   if (!head.mobile) {
     bottomWaypoint();
   }
