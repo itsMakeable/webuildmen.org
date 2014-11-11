@@ -144,7 +144,6 @@ $(window).on('load', function() {
   preCacheImages();
   setHeights();
   if (window.location.hash === '#toolkits') {
-    console.log($('.works').offset().top);
     $('html,body').animate({
       scrollTop: $('.works').offset().top
     }, 0, 'easeOutQuad');
