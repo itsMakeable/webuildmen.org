@@ -140,7 +140,7 @@ $(window).on 'load', ->
 	preCacheImages()
 	setHeights()
 
-	if window.location.pathname = 'http://staging.webuildmen.org/#knowhow'
+	if window.location.pathname == 'http://staging.webuildmen.org/#toolkits'
 		$('html,body').animate
 			scrollTop: $('[data-offset]').attr('data-offset')
 		, 900, 'easeOutQuad'
