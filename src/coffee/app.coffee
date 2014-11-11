@@ -19,13 +19,16 @@ setHeights = ->
 		'max-height': $(window).height()
 	$('.js-set-min-height').css 
 		'min-height': $(window).height()
+	$('[data-offset]').each(->
+		$(this).attr('data-offset', $(this).offset().top)
+		)
 
 preCacheImages = ->
 	imgArray = $.makeArray($('[data-precache]'))
 	$.each imgArray, ->
 		img = new Image()
 		img.src = $(this).data('precache')
-		
+
 bottomWaypoint = ->
 	$('#index-page body')
 		.waypoint
@@ -48,85 +51,35 @@ bottomWaypoint = ->
 					$('footer').removeClass 'is-bottom'
 					# $('.tools__actions').addClass 'js-is-hidden'
 
-#=================================
-#===  OWL CROUSEL               ====
-#===================================
-# $(document).ready ->
-# 	owl = $('#client-feedbacks')
-# 	owl.owlCarousel
-# 		items: 3 #10 items above 1000px browser width
-# 		itemsDesktop: [ #5 items between 1000px and 901px
-# 			1000
-# 			2
-# 		]
-# 		itemsDesktopSmall: [ # betweem 900px and 601px
-# 			900
-# 			1
-# 		]
-# 		itemsTablet: [ #2 items between 600 and 0
-# 			600
-# 			1
-# 		]
-# 		itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
 
-# 	return
-
-
-#=================================
-#===  SCROLL WAYPOINT             ====
-#=================================== 
-# scrollWaypoint = ->
-# 	$('.works .container')
-# 		.waypoint
-# 			offset: 0
-# 			handler: (direction) ->
-# 				if direction == 'down'
-# 					$('.works')
-# 						.css 
-# 							'background-attachment': 'fixed'
-# 				else
-# 					$('.works')
-# 						.css 
-# 							'background-attachment': 'scroll'
-
-
-#=================================
-#===  SMOOTH SCROLL             ====
-#=================================== 
-
-# $(document).ready(function() {
-#   var scrollAnimationTime = 1200,
-#   scrollAnimation = 'easeInOutExpo';
-#   $('a.scrollto').bind('click.smoothscroll',function (event) {
-#     event.preventDefault();
-#     var target = $(this).attr('href').substr(1);
-#     $.scrollTo($(target), 1000, {offset:-75} );
-#     hash = target.substr(1);
-#     window.location.hash = hash;
-#   });  
-# }); 
-	
-
-$("#index-page a[href*=\"#\"]").on 'click', (e) ->
-	$("html,body").animate
-		scrollTop: $(@hash).offset().top
-	, 700
-	e.preventDefault()
-
-$("#project-page a[href*=\"#\"]").on 'click', (e) ->
-	$(".tools").animate
-			scrollTop: $('.tools__scroll-container').offset().top
-		, 700
+$('#index-page a[href*=\"#\"]').on 'click', (e) ->
+	if $(@hash).selector != '#toolkits'
+		$('html,body').animate
+			scrollTop: $(@hash).offset().top
+		, 900, 'easeOutQuad'
 		return false
+		e.preventDefault()
+	else
+		$('html,body').animate
+			scrollTop: $('[data-offset]').attr('data-offset')
+		, 900, 'easeOutQuad'
+		return false
+		e.preventDefault()
+$('#project-page .back-to-top').on 'click', (e) ->
+	console.log 'this'
+	$('.tools').animate
+			scrollTop: $('body').offset().top
+	, 900, 'easeOutQuad'
+	return false
 	e.preventDefault()
 
-$(".tools__title .logo").on 'click', (e) ->
+$('.tools__title .logo').on 'click', (e) ->
 	$('.panel').addClass('is-highlighted')
-	$(".tools").animate
-			scrollTop: $('.panel').offset().top
-		, 700, ->
+	$('.tools').animate
+			scrollTop: $('.tools__scroll-container').height()
+		, 900, 'easeOutQuad', ->
 			$('.panel').removeClass('is-highlighted')
-		return false
+	return false
 	e.preventDefault()
 
 
@@ -135,11 +88,11 @@ $(".tools__title .logo").on 'click', (e) ->
 #================================= 
 $ ($) ->
 		
-	$(document).on "click", (event) ->
-		if !$(event.target).closest('.tools-icons__share').length
-			$('.tools-icons__share').parent().next().addClass('js-is-hidden')
+	$(document).on 'click', (event) ->
+		if !$(event.target).closest('.tools-group__share').length
+			$('.tools-group__share').parent().next().addClass('js-is-hidden')
 
-	$('.tools-icons').on 'click', '.tools-icons__share', ->
+	$('.tools-groups').on 'click', '.tools-group__share', ->
 		$(this).parent().next().toggleClass('js-is-hidden')
 
 
@@ -148,7 +101,7 @@ $ ($) ->
 	#===  PARALLAX                ====
 	#================================= 
 	$window = $(window)
-	$("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each ->
+	$('div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]').each ->
 		$bgobj = $(this)
 		$(window).scroll ->
 			yPos = -($window.scrollTop() / $bgobj.data("speed"))
@@ -182,12 +135,11 @@ $ ->
 				'background-repeat': 'no-repeat'
 
 $(window).on 'load', ->
-	bottomWaypoint()
 	preCacheImages()
 	setHeights()
 	
-	# if ww > 1024 && !head.touch
-	# 	scrollWaypoint()
+	if !head.mobile
+		bottomWaypoint()
 
 	# will first fade out the loading animation
 	$(".status").fadeOut()
@@ -200,6 +152,7 @@ $(window).on 'resize', ->
 
 	$(".equal-height").equalize children: "h6"
 	setHeights()
-	
+	if !head.mobile
+		bottomWaypoint()
 	# if ww > 1024 && !head.touch
 	# 	scrollWaypoint()

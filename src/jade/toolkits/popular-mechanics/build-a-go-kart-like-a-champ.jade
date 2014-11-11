@@ -1,45 +1,44 @@
 extends ../../_includes/layout
-
+block head
+	meta(property='og:title', content='Build a Go-Kart like a Champ')
+	meta(property='og:description', content='Guidelines and tips that’ll only take you a day')
 block content
 	section.single-project.js-set-min-height(style='padding-top:150px;background: url("/images/backgrounds/bg_popular-machanics-2.jpg") no-repeat; background-size: cover; background-position: top left; background-attachment: fixed;')
 		.container
-
-			//- SECTION HEADER
-			//- .section-header
-			//- 	//- SECTION TITLE
-			//- 	h2.white-text Popular Mechanics
-			//- 	//- SHORT DESCRIPTION ABOUT THE SECTION
-			//- 	//- h6.white-text
-			//- 	//- 	| By Popular Mechanics
-			//- 	br
-			//- 	br
-			//- 	br
-
 			.row
 				.col-lg-4.col-md-4.column.title-block
 					.big-intro.wow.fadeInLeft.animated.tools__title(data-wow-offset='50', data-wow-duration='1.5s', data-wow-delay='0.6s')
 						.logo
-							svg.tools__logo(style="width: 145px;")
+							svg.tools__logo(style="width: 145px;height: 15px")
 								use(xlink:href='#logo-popular-mechanics')
 						div
 							| Build a Go-Kart like a Champ
-						.tools-icons
-							svg.tools-icons__share(style="width: 20px; height: 20px;")
-								use(xlink:href='#icon-share')
-							svg(style="width: 20px; height: 20px;")
-								use(xlink:href='#icon-download') 
+						.tools-groups
+							.tools-group.tools-group__share
+								//- span
+								//- 	svg.tools-icon.tools-icon__share(style="width: 20px; height: 20px;" title='Share')
+								//- 		use(xlink:href='#icon-share')
+								span.tools-text Share
+							span.tools-groups__break |
+							.tools-group
+								//- span
+								//- 	svg.tools-icon.tools-icon__download(style="width: 20px; height: 20px;" title='Download')
+								//- 		use(xlink:href='#icon-download')
+								span.tools-text Download
+							//- .cover.cover--right
+							//- 	span
 						.tools__actions.js-is-hidden
 							span Share this
 							.social-icons.is-small
-								a(href="https://www.facebook.com/webuildmen" alt='We Build Men Faceboo Profile')
+								i.st_facebook_custom(displayText='Facebook')
 									svg
 										use(xlink:href='#icon-facebook')
-								a(href="https://twitter.com/webuildmen" alt='We Build Men Twitter Profile')
+								i.st_twitter_custom(displayText='Twitter' st_title='We Build Men — Build a Go-Kart like a Champ' st_url='http://webuildmen.org/' st_via='')
 									svg
 										use(xlink:href='#icon-twitter')
 				//- COLUMN 2 - BRIEF ABOUT THE COMPANY
 				.col-lg-6.col-md-7.column
-					.tools.js-set-height.wow.fadeInRight.animated(data-wow-offset='50', data-wow-duration='1.5s', data-wow-delay='0.6s')
+					.tools.wow.fadeInRight.animated(data-wow-offset='50', data-wow-duration='1.5s', data-wow-delay='0.6s')
 						.tools__scroll-container
 							.tools__padding
 								h4 Guidelines and tips that’ll only take you a day
@@ -51,12 +50,11 @@ block content
 									a(href='http://www.spidercarts.com/') spidercarts.com
 									| ) have the dimensions for the parts, particularly those that make the frame. We’ve provided some extra help here:
 								h3 Instructions
-								hr
 								h6 The Frame
 								p
 									| Use a hacksaw or chop saw to cut metal stock to length. Clamp the steel in a vise and file or grind the cut edges smooth. Using a MIG welder, tack together the parts to check for a good fit, and make final welds to complete the frame.
 
-								img(src="go-cart.jpg", alt="")
+								img(src="go-cart.jpg", alt="Go-Kart schematic")
 									
 								h6 Steering
 								p
@@ -81,8 +79,7 @@ block content
 								p
 									| Make a seat by stapling vinyl and foam cushioning to plywood. Bolt it to the seat post and the frame.
 								p Put a helmet on the driver. Have some fun.
-								//- a.btn.btn-primary.custom-button.red-btn(href='#', target='_blank') Download 
-							
+								
 							.panel
 								.logo
 									svg.tools__logo(style="width: 200px; height: 40px")
@@ -91,9 +88,9 @@ block content
 								p Popular Mechanics is a classic magazine of popular technology. First published January 11, 1902, by H. H. Windsor, it has been owned since 1958 by the Hearst Corporation.
 								p
 									a.button--silent(href="#" target='_blank') 
-										| Go to Site
+										span Go to Site
 										span
-											svg
+											svg.icon-arrow
 												use(xlink:href='#icon-arrow')
 
 	script

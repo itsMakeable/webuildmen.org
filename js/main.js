@@ -15,8 +15,11 @@ setHeights = function() {
     'min-height': $(window).height(),
     'max-height': $(window).height()
   });
-  return $('.js-set-min-height').css({
+  $('.js-set-min-height').css({
     'min-height': $(window).height()
+  });
+  return $('[data-offset]').each(function() {
+    return $(this).attr('data-offset', $(this).offset().top);
   });
 };
 
@@ -54,26 +57,36 @@ bottomWaypoint = function() {
   });
 };
 
-$("#index-page a[href*=\"#\"]").on('click', function(e) {
-  $("html,body").animate({
-    scrollTop: $(this.hash).offset().top
-  }, 700);
-  return e.preventDefault();
+$('#index-page a[href*=\"#\"]').on('click', function(e) {
+  if ($(this.hash).selector !== '#toolkits') {
+    $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 900, 'easeOutQuad');
+    return false;
+    return e.preventDefault();
+  } else {
+    $('html,body').animate({
+      scrollTop: $('[data-offset]').attr('data-offset')
+    }, 900, 'easeOutQuad');
+    return false;
+    return e.preventDefault();
+  }
 });
 
-$("#project-page a[href*=\"#\"]").on('click', function(e) {
-  $(".tools").animate({
-    scrollTop: $('.tools__scroll-container').offset().top
-  }, 700);
+$('#project-page .back-to-top').on('click', function(e) {
+  console.log('this');
+  $('.tools').animate({
+    scrollTop: $('body').offset().top
+  }, 900, 'easeOutQuad');
   return false;
   return e.preventDefault();
 });
 
-$(".tools__title .logo").on('click', function(e) {
+$('.tools__title .logo').on('click', function(e) {
   $('.panel').addClass('is-highlighted');
-  $(".tools").animate({
-    scrollTop: $('.panel').offset().top
-  }, 700, function() {
+  $('.tools').animate({
+    scrollTop: $('.tools__scroll-container').height()
+  }, 900, 'easeOutQuad', function() {
     return $('.panel').removeClass('is-highlighted');
   });
   return false;
@@ -82,16 +95,16 @@ $(".tools__title .logo").on('click', function(e) {
 
 $(function($) {
   var $window;
-  $(document).on("click", function(event) {
-    if (!$(event.target).closest('.tools-icons__share').length) {
-      return $('.tools-icons__share').parent().next().addClass('js-is-hidden');
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('.tools-group__share').length) {
+      return $('.tools-group__share').parent().next().addClass('js-is-hidden');
     }
   });
-  $('.tools-icons').on('click', '.tools-icons__share', function() {
+  $('.tools-groups').on('click', '.tools-group__share', function() {
     return $(this).parent().next().toggleClass('js-is-hidden');
   });
   $window = $(window);
-  return $("div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]").each(function() {
+  return $('div[data-type=\"background\"], header[data-type=\"background\"], section[data-type=\"background\"]').each(function() {
     var $bgobj;
     $bgobj = $(this);
     return $(window).scroll(function() {
@@ -129,9 +142,11 @@ $(function() {
 });
 
 $(window).on('load', function() {
-  bottomWaypoint();
   preCacheImages();
   setHeights();
+  if (!head.mobile) {
+    bottomWaypoint();
+  }
   $(".status").fadeOut();
   return $(".preloader").delay(1000).fadeOut("slow");
 });
@@ -142,5 +157,8 @@ $(window).on('resize', function() {
   $(".equal-height").equalize({
     children: "h6"
   });
-  return setHeights();
+  setHeights();
+  if (!head.mobile) {
+    return bottomWaypoint();
+  }
 });
