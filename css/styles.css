@@ -7675,33 +7675,36 @@ hr {
 /*---------------------------------------
  **   BUTTONS                        -----
 -----------------------------------------*/
-.button--silent span {
+.button--silent {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  display: block;
-  font-size: 13px;
-  color: #e96656; }
-.button--silent:focus, .button--silent:visited {
-  color: #e96656;
-  text-decoration: none;
-  border-bottom: 0px solid transparent; }
-.button--silent:hover {
-  color: #1c1c1c;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-  .button--silent:hover span {
+  font-weight: 700; }
+  .button--silent span {
+    font-family: inherit;
+    font-weight: inherit;
+    display: block;
+    font-size: 13px;
+    color: #e96656; }
+  .button--silent:focus, .button--silent:visited {
+    color: #e96656;
+    text-decoration: none;
+    border-bottom: 0px solid transparent; }
+  .button--silent:hover {
     color: #1c1c1c;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
-.button--silent span {
-  display: inline-block;
-  padding: 0 3px;
-  color: #e96656; }
-  .button--silent span svg {
+    .button--silent:hover span {
+      color: #1c1c1c;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+  .button--silent span {
     display: inline-block;
-    height: 18px;
-    width: 18px;
-    vertical-align: middle; }
+    padding: 0 3px;
+    color: #e96656; }
+    .button--silent span svg {
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      vertical-align: middle; }
 
 .pink-outline-btn {
   border: 2px solid #e96656;
