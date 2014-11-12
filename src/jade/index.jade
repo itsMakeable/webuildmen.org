@@ -2,7 +2,7 @@ extends _includes/layout
 block head
 	title We Build Men
 	meta(property='og:title', content='')
-	meta(property='og:description', content='WeBuildMen.org is a place to get the know how, tools and support to help build tomorrow\'s men, today.')
+	meta(property='og:description', content='WeBuildMen.org is a place to get the know how, tools, and support to help build tomorrow\'s men, today.')
 	meta(property='og:url', content='http://webuildmen.org')
 	meta(property='og:image', content='http://webuildmen.org/images/logo.png')
 block content
@@ -23,7 +23,7 @@ block content
 					a.scrollto(href='/#knowhow') Know-How
 					| , 
 					a.scrollto(href='/#toolkits') Tools 
-					| &amp; 
+					| , &amp; 
 					a.scrollto(href='/#community') Community 
 					| to help build tomorrow’s men,&nbsp;today.
 
@@ -37,7 +37,7 @@ block content
 		.container
 			.section-header
 				.visible-xs.visible-sm.visible-md.visible-lg(style='margin-top: 8%;')
-				svg.section-header__img(viewbox='3.3 0.1 664.6 99.3')
+				svg.section-header__img(viewbox='3.3 0.1 664.6 99.3' style="max-height: 66px")
 					use(xlink:href='#about-us')
 
 			.row
@@ -86,14 +86,14 @@ block content
 			.section-header
 				.visible-xs(style='margin-top: 8%;')
 				.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
-				svg.section-header__img(viewbox='0 0 788.2 155.5')
+				svg.section-header__img(viewbox='0 0 788.2 155.5' style="max-height: 88px")
 					use(xlink:href='#know-how')
 				div(style='margin-top: 10px;')
-					svg.star--small(viewbox='0 0 50.4 48')
+					svg.icon-star.star--small(viewbox='0 0 50.4 48')
 						use(xlink:href='#icon-star')
-					svg.star--large(width='30' viewbox='0 0 50.4 48')
+					svg.icon-star.star--large(width='30' viewbox='0 0 50.4 48')
 						use(xlink:href='#icon-star') 
-					svg.star--small(viewbox='0 0 50.4 48')
+					svg.icon-star.star--small(viewbox='0 0 50.4 48')
 						use(xlink:href='#icon-star') 
 				br
 				h4
@@ -186,10 +186,10 @@ block content
 				.visible-xs(style='margin-top: 8%;')
 				.visible-sm.visible-md.visible-lg(style='margin-top: 10%;')
 				.section-header
-					svg.section-header__img(viewbox='0 0 116.6 112')
+					svg.section-header__img(viewbox='0 0 116.6 112' style="max-height: 128px")
 						use(xlink:href='#icon-hammer-screwdriver') 
 					br
-					svg(width='50%' viewbox='0 0 903.5 100')
+					svg(width='50%' viewbox='0 0 903.5 100' style="max-height: 61px")
 						use(xlink:href='#toolkits') 
 					br
 					br

@@ -114,7 +114,7 @@ $ ($) ->
 #===  WOW ANIMATION             ====
 #=================================== 
 
-new WOW().init();
+
 
 # =================================
 #===  MATCH HEIGHT             ====
@@ -138,7 +138,7 @@ $ ->
 
 $(window).on 'load', ->
 	preCacheImages()
-	setHeights()
+	
 
 	if window.location.hash == '#toolkits'
 		$('html,body').animate
@@ -146,7 +146,9 @@ $(window).on 'load', ->
 		, 0, 'easeOutQuad'
 
 	if !head.mobile
+		setHeights()
 		bottomWaypoint()
+		new WOW().init();
 
 	# will first fade out the loading animation
 	$(".status").fadeOut()
@@ -158,8 +160,9 @@ $(window).on 'resize', ->
 	wh = $(window).height()
 
 	$(".equal-height").equalize children: "h6"
-	setHeights()
+	
 	if !head.mobile
+		setHeights()
 		bottomWaypoint()
 	# if ww > 1024 && !head.touch
 	# 	scrollWaypoint()

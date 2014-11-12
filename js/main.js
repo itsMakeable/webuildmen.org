@@ -117,8 +117,6 @@ $(function($) {
   });
 });
 
-new WOW().init();
-
 $(function() {
   $('.equal-height').equalize({
     children: 'p'
@@ -142,14 +140,15 @@ $(function() {
 
 $(window).on('load', function() {
   preCacheImages();
-  setHeights();
   if (window.location.hash === '#toolkits') {
     $('html,body').animate({
       scrollTop: $('.works').offset().top
     }, 0, 'easeOutQuad');
   }
   if (!head.mobile) {
+    setHeights();
     bottomWaypoint();
+    new WOW().init();
   }
   $(".status").fadeOut();
   return $(".preloader").delay(1000).fadeOut("slow");
@@ -161,8 +160,8 @@ $(window).on('resize', function() {
   $(".equal-height").equalize({
     children: "h6"
   });
-  setHeights();
   if (!head.mobile) {
+    setHeights();
     return bottomWaypoint();
   }
 });
