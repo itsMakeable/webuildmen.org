@@ -8232,6 +8232,9 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   /*-webkit-box-shadow: inset 0 5px 0 rgba(0,0,0,.2), 0 5px 0 rgba(0,0,0,.2);*/
   /*box-shadow: inset 0 5px 0 rgba(0,0,0,.2), 0 5px 0 rgba(0,0,0,.2);*/
   background-color: #fff; }
+  .knowhow-box .service-icon svg {
+    top: 55px !important;
+    vertical-align: top; }
 
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
 .red, .green, .blue, .yellow {
@@ -8520,9 +8523,6 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
       .single-project .tools__title .logo svg {
         vertical-align: top;
         display: inline-block; }
-        @media screen and (max-width: 640px) {
-          .single-project .tools__title .logo svg {
-            top: 40%; } }
 
 .tools__actions {
   position: absolute;

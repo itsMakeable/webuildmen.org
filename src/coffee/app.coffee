@@ -148,8 +148,8 @@ $(window).on 'load', ->
 		setHeights()
 		bottomWaypoint()
 		$('.equal-height').equalize children: 'p'
-				
-	if !head.mobile
+
+	if !head.mobile or !head.touch or ww > 1024
 		new WOW().init();
 
 	# will first fade out the loading animation

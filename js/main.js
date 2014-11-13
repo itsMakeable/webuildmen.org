@@ -149,7 +149,7 @@ $(window).on('load', function() {
       children: 'p'
     });
   }
-  if (!head.mobile) {
+  if (!head.mobile || !head.touch || ww > 1024) {
     new WOW().init();
   }
   $(".status").fadeOut();

@@ -875,7 +875,9 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	/*box-shadow: inset 0 5px 0 rgba(0,0,0,.2), 0 5px 0 rgba(0,0,0,.2);*/
 	background-color: #fff;
 	svg {
-		@extend .vertical-align
+		@extend .vertical-align;
+		top: 55px !important;
+		vertical-align: top;
 	}
 }
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
@@ -1267,9 +1269,6 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 				vertical-align: top;
 				display: inline-block;
 				@extend .vertical-align;
-				@media screen and (max-width: 640px) {
-					top: 40%;
-				}
 			}
 		}
 	}
