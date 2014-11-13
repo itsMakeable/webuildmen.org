@@ -7579,6 +7579,14 @@ ul.bulleted li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; }
 
+@media screen and (max-width: 992px) {
+  .equal-height p {
+    height: 100% !important; }
+
+  .js-set-min-height {
+    height: 100% !important; }
+ }
+
 /*---------------------------------------
  **   TYPOGRAPHY                     -----
 -----------------------------------------*/
@@ -8339,7 +8347,6 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
       width: 90%;
       margin: 2% auto; } }
 
-/* Flexbox is used for centering the heading */
 .project-box {
   display: inline-block;
   width: 100%; }
