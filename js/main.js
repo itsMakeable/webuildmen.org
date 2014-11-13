@@ -118,9 +118,6 @@ $(function($) {
 });
 
 $(function() {
-  $('.equal-height').equalize({
-    children: 'p'
-  });
   return $('.project-box figure').on('mouseover', function() {
     return $(this).css({
       'background-image': 'url(' + $(this).data("precache") + ')',
@@ -145,9 +142,14 @@ $(window).on('load', function() {
       scrollTop: $('.works').offset().top
     }, 0, 'easeOutQuad');
   }
-  if (!head.mobile) {
+  if (!head.mobile || ww < 992) {
     setHeights();
     bottomWaypoint();
+    $('.equal-height').equalize({
+      children: 'p'
+    });
+  }
+  if (!head.mobile) {
     new WOW().init();
   }
   $(".status").fadeOut();
@@ -157,10 +159,10 @@ $(window).on('load', function() {
 $(window).on('resize', function() {
   ww = $(window).width();
   wh = $(window).height();
-  $(".equal-height").equalize({
-    children: "h6"
-  });
-  if (!head.mobile) {
+  if (!head.mobile || ww < 992) {
+    $(".equal-height").equalize({
+      children: "h6"
+    });
     setHeights();
     return bottomWaypoint();
   }

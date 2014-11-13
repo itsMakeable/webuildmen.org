@@ -1267,6 +1267,9 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 				vertical-align: top;
 				display: inline-block;
 				@extend .vertical-align;
+				@media screen and (max-width: 640px) {
+					top: 40%;
+				}
 			}
 		}
 	}

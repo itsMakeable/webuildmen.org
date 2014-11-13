@@ -120,7 +120,6 @@ $ ($) ->
 #===  MATCH HEIGHT             ====
 #=================================== 
 $ ->
-	$('.equal-height').equalize children: 'p'
 	
 	$('.project-box figure')
 		.on 'mouseover', ->
@@ -145,9 +144,12 @@ $(window).on 'load', ->
 			scrollTop: $('.works').offset().top
 		, 0, 'easeOutQuad'
 
-	if !head.mobile
+	if !head.mobile or ww < 992
 		setHeights()
 		bottomWaypoint()
+		$('.equal-height').equalize children: 'p'
+				
+	if !head.mobile
 		new WOW().init();
 
 	# will first fade out the loading animation
@@ -159,9 +161,10 @@ $(window).on 'resize', ->
 	ww = $(window).width()
 	wh = $(window).height()
 
-	$(".equal-height").equalize children: "h6"
 	
-	if !head.mobile
+	
+	if !head.mobile or ww < 992
+		$(".equal-height").equalize children: "h6"
 		setHeights()
 		bottomWaypoint()
 	# if ww > 1024 && !head.touch
