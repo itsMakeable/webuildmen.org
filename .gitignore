@@ -7,6 +7,10 @@
 out/
 local.properties
 
+<<<<<<< HEAD
+=======
+.sass-cache
+>>>>>>> development
 
 # Generic Android ignores #
 ###########################

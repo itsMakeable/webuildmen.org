@@ -2,7 +2,73 @@
 	"folders":
 	[
 		{
-			"path": "."
+				"path": ".",
+				"folder_exclude_patterns": ["node_modules",".sass-cache",".git"],
+				"file_exclude_patterns": ["*.jpg","*.png","*.gif","*.scssc",".DS_Store"]
 		}
-	]
+	],
+	"settings": {
+		"todoreview": {
+			"case_sensitive": true,
+			"exclude_folders": [
+				"*.git", 
+				"bower_components", 
+				"images", 
+				".codekit-cache", 
+				"assets", 
+				"svg", 
+				"symbol",
+				"css",
+				"js",
+				"libsass",
+				"libxml",
+				"CSSselect",
+				"test",
+				"bin",
+				"node_modules",
+				".sass-cache",
+				"core-util-is",
+				"commander",
+				"*.git",
+				".git",
+				"build",
+				"event-stream",
+				"map-stream",
+				"examples",
+				"liftoff"
+			],
+			"exclude_files": [
+				"*.sublime-workspace",
+				"*.sublime-project",
+				".sass-cache",
+				"*.json",
+				"*.codekit",
+				"*.xml",
+				"*.html",
+				".gitignore",
+				"*.c",
+				"*.cc",
+				"*.cpp",
+				"*.hpp",
+				"*.h",
+				"*.jpg",
+				"*.png",
+				"*.gif",
+				"*.scssc",
+				"*.map",
+				"*.patch",
+				".DS_Store",
+				"Makefile",
+				"completion.coffee",
+				"*.md",
+				"*.markdown"
+			],
+			"patterns": {
+				"TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$",
+				"NOTE": "NOTE[\\s]*?:[\\s]*(?P<note>.*)$",
+				"FIX": "FIX[\\s]*?:[\\s]*(?P<fix>.*)$",
+				"EDIT": "CHANGED[\\s]*?:[\\s]*(?P<changed>.*)$"
+			}
+		}
+	}
 }
